@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="EstilosPaginas.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../resources_general/cientifico.png">
+
+    <title>Tema 6</title>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="#1">Tipos de usuario</a></li>
+            <li><a href="#2">Barreras</a></li>
+            <li><a href="#3">Estándares</a></li>
+            <li><a href="#4">Análisis</a></li>
+            <li><a href="#5">Identificación</a></li>
+            <li><a href="#6">Navegación</a></li>
+            <li><a href="#7">Experiencia</a></li>
+            <li><a href="#8">Velocidad</a></li>
+            <li><a href="#9">Test</a></li>
+            <li><a href="#10">Verificación</a></li>
+        </ul>
+    </nav>
+    <div class="Titulo">
+        <h1>TEMA 6</h1>
+        <h2>IMPLEMENTACIÓN DE USABILIDAD WEB</h2>
+    </div>
+    <div class="Teoria">
+        <div class="col_izquierda">
+            <h2 id="1">Tipos de usuario</h2>
+            <div class="contenido">
+                <p>La mitad de los usuarios tienen algún tipo de problema o dificultad para poder acceder a las aplicaciones o a la web.</p>
+                <p>La WAI es la iniciativa de usabilidad de la Web promovida por el consorcio web, y pretende ofrecer una guía estándar para todos los desarrolladores de navegadores, webs y herramientas.</p>
+                <h3>Perfiles tipo</h3>
+                <p>Las técnicas están reunidas en este documento, al que se le hace referencia para cada uno de los casos:</p>
+                <p><a href="https://www.w3.org/TR/WAI-WEBCONTENT-TECHS" id="ejemplos">https://www.w3.org/TR/WAI-WEBCONTENT-TECHS</a></p>
+                <p>Así como en esta guía que resume técnicas que deben facilitar los navegadores:</p>
+                <p><a href="https://www.w3.org/TR/UAAG10/" id="ejemplos">https://www.w3.org/TR/UAAG10/</a></p>
+                <p>También hay definidos unos estándares para dispositivos móviles, que son más recientes:</p>
+                <p><a href="https://www.w3.org/WAI/standards-guidelines/mobile/" id="ejemplos">https://www.w3.org/WAI/standards-guidelines/mobile/</a></p>
+                <p>A continuación vamos a detallar algunos ejemplos de usuarios o escenarios que se reflejan en la WAI.</p>
+                <h3>Comprador online daltónico</h3>
+                <p>El daltonismo o ceguera en colores ocurre cuando un usuario no es capaz de distinguir colores como el rojo y verde o azul y amarillo. Eso supone, que si un usuario no ve correctamente los colores, es posible que no sea capaz de ver bien todo el contenido de la web.</p>
+                <p><strong>Solución</strong></p>
+                <p>Para solucionar este problema, debemos de usar colores que contrasten (cómo por ejemplo el amarillo y el azul) usando una hoja de estilos externa para que el usuario pueda alterar los colores.</p>
+                <p>Midnight Lizard es una herramienta que se instala en el navegador y nos permite cambiar los colores de una web.</p>
+                <p><img src="resources/app1.png" alt="Midnight Lizard" title="Midnight Lizard" id="ajusteImagen2"></p>
+                <p><img src="resources/appIn.png" alt="Midnight Lizard" title="Midnight Lizard" id="ajusteImagen2"></p>
+                <h3>Periodista o reportero con discapacidad de manos</h3>
+                <p>La discapacidad de manos supone desde una descoordinación motora de los dedos, manos o brazos o ausencia de ellos. Normalmente este tipo de usuarios suelen usar un ratón especial y un sistema de reconocimiento por voz.</p>
+                <p><strong>Solución</strong></p>
+                <p>Para solucionar este problema podemos usar un teclado en pantalla y además facilitar al usuario Access Keys (atajos de teclado), para acceder a las secciones de la web de forma fácil y rápida.</p>
+                <p>Con la herramienta de Teclado Virtual, cómo su nombre indica, nos permite añadir de forma fácil y rápida un teclado por pantalla. A parte, esta herramienta incluye un selector de idioma, con el cual puedes seleccionar la distribución de teclado que queremos que se muestre.</p>
+                <p><img src="resources/app2.png" alt="Teclado Virtual" title="Teclado Virtual" id="ajusteImagen2"></p>
+                <h3>Estudiante sordo online</h3>
+                <p>Una persona sorda no es capaz de escuchar los sonidos que suceden a su alrededor. Eso a la hora de navegar por una web, solo le afectan los contenidos multimedia.</p>
+                <p><strong>Solución</strong></p>
+                <p>La mejor solución para este tipo de usuarios es proporcionar subtítulos a todos los vídeos de nuestro sitio web.</p>
+                <h3>Jubilado</h3>
+                <p>Una persona jubilada, es una persona que poco a poco va perdiendo cualidades (la vista, la destreza, la atención, el oído e incluso la memoria).</p>
+                <p><strong>Solución</strong></p>
+                <p>Para solucionar este problema, a la hora de diseñar las interfaces web, debemos de tener en cuenta el uso de interfaces sin movimiento, con textos e imágenes a buena escala.</p>
+                <h3>Diversidad por habilidades</h3>
+                <p>En este enlace podemos ver un documento de la WAI sobre cómo las personas con discapacidad utilizan la web:</p>
+                <p><a href="https://www.w3.org/WAI/people-use-web/es" id="ejemplos">https://www.w3.org/WAI/people-use-web/es</a></p>
+                <p>Además de los perfiles vistos anteriormente, la WAI puede clasificar los tipos de usuarios de forma más genérica según sus impedimentos:</p>
+                <h3>Impedimentos de edad</h3>
+                <p>La edad causa que de forma irremediable se suman problemas de vista, de habilidad, de oído, etc., y también el tener que adaptarse a los cambios y nuevas tecnologías.</p>
+                <p>Por ejemplo, un abuelo que aún maneja un nokia tendrá problemas para adaptarse al iPhone nuevo que sus nietos le han regalado.</p>
+                <h3>Múltiples impedimentos</h3>
+                <p>Los impedimentos a veces no vienen solos y se pueden acumular. Por ejemplo, una persona que tenga tanto problemas de visión como de audición.</p>
+                <h3>Impedimentos de salud</h3>
+                <p>El hecho de tener buena salud, no nos referimos a estar físicamente bien. Se pueden tener problemas de aguante, de concentración o destreza. Ya no es el hecho de tener una discapacidad, sino estar fatigado o dolorido.</p>
+                <p>Por ejemplo, un administrativo sin discapacidad, pero sufre de migrañas (dolores de cabeza), y eso hará que haya días que no rinda al máximo en el trabajo.</p>
+                <h3>Habilidades cambiantes</h3>
+                <p>También pueden salir impedimentos cuando las habilidades no se mantienen constantes. Puede ocurrir que las condiciones de un usuario cambie de repente.</p>
+                <p>Por ejemplo, una persona que siempre ha tenido un iPhone, se le rompe y no le queda otra que comprarse un Samsung. Tendrá problemas al adaptarse a un dispositivo distinto.</p>
+                <h3>Impedimentos temporales</h3>
+                <p>Estos impedimentos le pueden ocurrir a cualquier persona a lo largo de su vida, ya sea causado por un accidente, enfermedad o medicación. Normalmente, es aquí cuando una persona sin discapacidades es consciente de los impedimentos que sufre una persona con discapacidad.</p>
+                <p>Por ejemplo, un programador que está en la oficina se pilla violentamente la mano contra una puerta y se rompe un dedo. A la hora de teclear no lo podrá hacer de forma habitual.</p>
+                <h3>Limitaciones circunstanciales</h3>
+                <p>Estos impedimentos no les afectan a las personas de forma directa, sino que son producidos por los dispositivos que se dispone, de la infraestructura, de la capacidad de la red…</p>
+                <p>Por ejemplo, cuando en un instituto hay una gran demanda de red, ésta se ralentiza o se cae.</p>
+            </div>
+            <h2 id="2">Barreras identificadas por los usuarios.</h2>
+            <div class="contenido">
+                <p>En la iniciativa WAI se identifican una serie de barreras para los usuarios con algún tipo de limitación. Vamos a clasificarlas según el tipo de impedimento del usuario. Debes tener presente que muchas de estas características pueden parecer inofensivas, pero que precisamente para ciertas personas se convierten en auténticas barreras para el uso de interfaces.</p>
+                <h3>Barreras comunes</h3>
+                <p><strong>Problemas auditivos</strong></p>
+                <p>
+                    <ul>
+                        <li>Contenido de audio, como por ejemplo, video con voces y sonido sin leyendas o transcripciones.</li>
+                        <li>Reproductores multimedia que no muestran ni leyendas ni controles de volumen.</li>
+                        <li>Reproductores multimedia que no ofrecen opciones para ajustar el tamaño de texto ni el color de las captions.</li>
+                        <li>Servicios basados en web, incluyendo aplicaciones web, que se apoyan únicamente en la voz como modo de investigación.</li>
+                        <li>Ausencia de lenguaje de signos para complementar información importante y texto que es difícil de leer.</li>
+                    </ul>
+                </p>
+                <p><strong>Problemas cognitivos o neurológicos</strong></p>
+                <p>
+                    <ul>
+                        <li>Mecanismos de navegación complicados y diseños de página que son difíciles de entender y utilizar.</li>
+                        <li>Frases complejas que resultan difíciles de leer y palabras inusuales que son difíciles de entender.</li>
+                        <li>Textos largos sin imágenes, gráficos u otras ilustraciones para remarcar el contexto.</li>
+                        <li>Contenido en movimiento, parpadeante o variante, y sonido de fondo que no se puede deshabilitar.</li>
+                        <li>Navegadores web o reproductores multimedia que no proveen mecanismos para eliminar animaciones y audio.</li>
+                        <li>Diseños de página que no pueden ser adaptados utilizando los controles de navegador web u hojas de estilo personalizadas.</li>
+                    </ul>
+                </p>
+                <p><strong>Problemas físicos</strong></p>
+                <p>
+                    <ul>
+                        <li>Páginas web, navegadores y herramientas de diseño que no proveen soportes para teclado full keyboard.</li>
+                        <li>Limitaciones de tiempo insuficientes para responder o completar tareas tales como rellenar formularios online.</li>
+                        <li>Controles, incluyendo enlaces con texto en imágenes sin una alternativa de texto equivalente.</li>
+                        <li>Ausencia de pistas orientativas visuales y no visuales, de estructura de página o de asistencia para la navegación.</li>
+                        <li>Mecanismos de navegación y funciones de páginas inconsistentes, imprescindibles y complejos.</li>
+                    </ul>
+                </p>
+                <p><strong>Problemas en la vista</strong></p>
+                <p>
+                    <ul>
+                        <li>Imágenes, controles  y otros elementos visuales que no tengan una alternativa en texto.</li>
+                        <li>Contenido de video sin alternativa en modo texto o con una pista de audio separada.</li>
+                        <li>Funciones de página y mecanismos de navegación inconsistentes, imprescindibles o en general complejos.</li>
+                        <li>Texto e imágenes con un contraste insuficiente entre los colores de fondo y primer plano.</li>
+                    </ul>
+                </p>
+                <p><strong>Problemas en el habla</strong></p>
+                <p>
+                    <ul>
+                        <li>Servicios basados en la web, incluyendo aplicaciones web que se sustentan únicamente en la interacción por voz.</li>
+                        <li>Sitios web que ofrecen números de teléfonos como única opción para comunicarse con la configuración.</li>
+                    </ul>
+                </p>
+                <h3>Barreras en Interfaces móviles</h3>
+                <p>Los móviles se han metido en los bolsillos de los usuarios y aunque muchos de los principios mencionados en la sección anterior también sirvan, por sus características especiales merecen un apartado diferente.</p>
+                <p>En la WAI se han reunido información a este respecto.</p>
+                <p>En general también rigen principios como que las interfaces sean perceptibles, operables, entendibles y robustas, pero las buenas prácticas que se sugieren cambian, teniendo en cuenta que las capacidades de interacción son menores…</p>
+                <p>
+                    <ul>
+                        <li>Añadir el scrolling.</li>
+                        <li>Añadir alternativas al texto.</li>
+                        <li>Facilitar valores por defecto.</li>
+                    </ul>
+                </p>
+            </div>
+            <h2 id="3">Importancia del uso de estándares externos</h2>
+            <div class="contenido">
+                <p>Esto debe ser un requisito imprescindible en el desarrollo de sitios y aplicaciones por una serie de motivos que conviene recordar. Algunos de ellos se deducen en lo dicho hasta ahora.</p>
+                <h3>Interoperabilidad</h3> 
+                <p>La Web, los dispositivos y los sistemas operativos. Todos ellos juntos deben formar un sistema distribuido en el que conviven cualquier tipo de tecnologías.</p>
+                <p>Para que puedan operar entre ellas, da igual quién fabrica cada aplicación, lo importante es que deben seguir unas pautas comunes para que a la hora  de que una aplicación realice una tarea, el resto se coordine y la pueda seguir.</p>
+                <p>Por ejemplo, un documento de Word que se guarda en una carpeta del sistema operativo Windows 10 que decidimos subir a una nube llamada Google Drive.</p>
+                <h3>Accesibilidad</h3>
+                <p>Lo hemos visto en el tema anterior. El Consorcio Web es el encargado de establecer las pautas para hacer las webs más accesibles. Además de pautas, ofrece mecanismos de accesibilidad a los lenguajes HTML y CSS para que se puedan aplicar en las webs:</p>
+                <p>
+                    <ul>
+                        <li>Atributos descriptivos para imágenes, enlaces, tablas, filas, etc.</li>
+                        <li>El uso de propiedades de habla de CSS.</li>
+                    </ul>
+                </p>
+                <p>Por ejemplo, podemos utilizar las técnicas ARIA para realizar una página web lo más accesible posible</p>
+                <h3>Estilos con CSS</h3>
+                <p>Usar CSS para modificar la presentación de la página web nos puede dar enormes ventajas:</p>
+                <p>
+                    <ul>
+                        <li>La separación de información y presentación facilita el mantenimiento de la página.</li>
+                        <li>La aplicación de estilos permite que los usuarios puedan habilitar, deshabilitar o cambiar sus propiedades.</li>
+                    </ul>
+                </p>
+                <h3>Desarrollo/Mantenimiento</h3>
+                <p>El uso de estándares externos va a facilitar el mantenimiento de las aplicaciones, ya que no dependen de los caprichos de las empresas y encima estarán consensuados por el consorcio web.</p>
+                <p>Los estándares abiertos permiten que existan muchas más herramientas de desarrollo. herramientas auxiliares y toda clase de programas alrededor de esos estándares.</p>
+                <p>Hasta los estándares unifican el desarrollo de aplicaciones en los móviles, donde ya se han creado proyectos de programación de aplicaciones multiplataforma que se pueden abrir en cualquier dispositivo, todo gracias al uso de estándares.</p>
+            </div>
+            <h2 id="4">Análisis de la usabilidad. TÉCNICAS</h2>
+            <div class="contenido">
+                <h3>Introducción a la usabilidad.</h3>
+                <p>Usabilidad es un atributo de calidad que mide lo fáciles de usar que son las interfaces Web.</p>
+                <p>Sea por la web o no, la usabilidad consiste en facilitar la navegación a los usuarios de nuestra página para que en definitiva consigan de manera clara lo que buscan.</p>
+                <p>Los principios básicos sobre los que se sustentan la usabilidad son:</p>
+                <p>
+                    <ul>
+                        <li>Sentido común: la palabra clave es fácil, así que no se deben crear interfaces sin sentido.</li>
+                        <li>Experiencia de uso: el usuario no parte de cero, así que es conveniente ofrecerle interfaces cuyo funcionamiento le resulte familiar.</li>
+                    </ul>
+                </p>
+                <h3>Normas básicas</h3>
+                <p>Estas son algunas de las normas esenciales para facilitar el uso:</p>
+                <p><strong>Legibilidad.</strong></p>
+                <p>Facilitar la legibilidad de los textos: tipos y tamaños de letra. contraste texto/fondo, textos más cortos. Este es un ejemplo de diferencia entre legibilidad de distintas fuentes y variantes.</p>
+                <p><strong>Organización.</strong></p>
+                <p>Se trata de lograr una adecuada organización de las páginas: un sitio web o una aplicación debe estar claramente estructurada.</p>
+                <p><strong>Navegación ágil.</strong></p>
+                <p>Se trata de que la interfaz no resulte pesada, por lo tanto, se debe procurar un tamaño reducido de las imágenes y ficheros vinculados, etiquetas, texto alternativo… Más adelante se presentarán técnicas para optimizar interfaces.</p>
+                <p><strong>Accesibilidad.</strong></p>
+                <p>Consiste en que la tecnología empleada no sea una barrera de entrada para nadie, ya que como se está mostrando en este capítulo, existen muchas trabas que se pueden evitar para usuarios con cualquier tipo de dificultad.</p>
+                <h3>Estándares.</h3>
+                <p>Las interfaces y, en especial, en el caso de las interfaces Web deben cumplir con una serie de estándares  y usos comunes. Puede que en algunos casos los usos comunes puedan cambiarse por el diseño, pero incluso en estos casos hay que mantener los usos.</p>
+                <p>
+                    <ul>
+                        <li>Texto negro sobre fondo blanco o con buen contraste entre ambos.</li>
+                        <li>Imagenes con texto alternativo.</li>
+                        <li>El usuario puede modificar el tamaño del texto en su navegador para leerlo mejor.</li>
+                        <li>Emplear encabezados y subencabezados para organizar el texto.</li>
+                    </ul>
+                </p>
+                <h3>Usos comunes.</h3>
+                <p>Los usuarios vienen con unas costumbres adquiridas, algunas de ellas tan básicas como la forma en la que se lee el texto.</p>
+                <p><strong>Izquierda a derecha.</strong></p>
+                <p>Acostumbramos a leer de izquierda a derecha y de arriba a abajo, al menos en occidente. Eso es algo que hay que tener muy en cuenta, no solo para leer y para alinear el texto a la izquierda o justificarlo, también para algo crucial : los elementos importantes o que deban de ser rápidamente localizados o aquellos que le queramos dar más importancia lo debemos colocar a la izquierda.</p>
+                <p><strong>Nombres comunes.</strong></p>
+                <p>Entendemos mejor las cosas si las llamamos por su nombre común . por ejemplo para volver al inicio diremos inicio o home, pero no principio o cualquier otro nombre divagando sobre su nombre común.</p>
+                <p><strong>Logotipos.</strong></p>
+                <p>El logotipo de la empresa en el sitio web siempre suele estar arriba a la izquierda. A veces se pone el logotipo en el centro pero nunca en la derecha de la pantalla.</p>
+                <p><strong>Barras de navegación.</strong></p>
+                <p>Los Nav Bar o la navegación se suele basar en poner los items en un rail a la izquierda,fichas superiores o categorías centrales.</p>
+                <p><strong>Búsquedas.</strong></p>
+                <p>El mecanismo de búsqueda debe facilitarse sobre todo en las páginas web con bastante información,  el buscador tiende a figurar arriba a la  derecha.</p>
+                <p><strong>Ayuda.</strong></p>
+                <p>Siempre se debe ofrecer ayuda,  pero tan importante como eso es que sea fácilmente localizable, y para ella es un sitio que es común: la ayuda aparece arriba a la derecha, como se suele hacer por ejemplo en los programas de escritorio.</p>
+                <h3>Legibilidad percepción.</h3>
+                <p><strong>Fuentes y Serif</strong></p>
+                <p>El serif es esa especie de adorno que remata las letras de las fuentes. En una pantalla se leen mejor los tipos de letra sans-serif que los serif.</p>
+                <p><strong>Contraste</strong></p>
+                <p>El contraste entre texto y fondo influye en la legibilidad, no solamente para personas con problemas de daltonismo.</p>
+                <p><strong>Tamaño</strong></p>
+                <p>Los tipos de letra demasiado pequeños se ven y leen mal y lo mismo ocurre con los demasiado grandes. También el texto en mayúsculas se lee peor que el texto en minúsculas.</p>
+                <p><strong>Márgenes</strong></p>
+                <p>El ancho de línea y los márgenes influyen en la legibilidad.</p>
+                <p>La ubicación de elementos como título, imagen e introducción al texto es la clave para que los usuarios lean o no los aspectos importantes del texto.</p>
+                <p><strong>Parpadeo y elementos dinámicos.</strong></p>
+                <p>Los elementos animados o parpadeantes distraen la atención del usuario. Existe un ejemplo muy conocido que sintetiza todo lo que no se debe hacer en una interfaz web.</p>
+                <h3>Convenciones.</h3>
+                <p>Conviene seguir las convenciones en todos los aspectos como colores, iconos, etc.</p>
+                <p>Por ejemplo, los colores tienen un significado implícito en una interfaz:</p>
+                <p>
+                    <ul>
+                        <li>Verde, se utiliza para dar paso, ok,éxito.</li>
+                        <li>Amarillo/Naranja, se utiliza para peligro o para avisar.</li>
+                        <li>Rojo, se utiliza para indicar, error, prohibido, acceso denegado.</li>
+                    </ul>
+                </p>
+                <h3>Rotulación y ayudas.</h3>
+                <p>Siempre es útil ofrecer ayudas a los usuarios para que puedan encontrar información y, en definitiva, utilizar rótulos que sirvan de guía. Además permiten al usuario conocer en qué lugar de la página se encuentra.</p>
+                <p><strong>Rastro de migas de pan</strong></p>
+                <p>O breadcrumbs, son las guías que se suelen incluir en las páginas entre el título y el contenido:</p>
+                <p>Inicio > Artículos >Usabilidad.</p>
+                <p>Resultan de gran ayuda para situar al usuario en la página y también como mecanismo de navegación para volver al inicio o a algún punto intermedio.</p>
+                <p><strong>Enlaces claros</strong></p>
+                <p>Un enlace puede ser más claro si va acompañado de una imagen o icono relacionado. El icono se "lee" de forma mucho más ágil y más si se pone a la izquierda.También es importante la correcta rotulación de los enlaces, deben identificar claramente el destino. Nunca debes utilizar nada del tipo "pinche aquí".</p>
+                <p><strong>Mapa de la web</strong></p>
+                <p>Un elemento que ha caído en desuso pero que puede seguir siendo válido en páginas web con jerarquías grandes.</p>
+                <h3>Las diez reglas de la usabilidad.</h3>
+                <p>
+                    <ol type="1">
+                        <li><strong>Visibilidad del estado del sistema:</strong> el sistema o la interfaz de usuario siempre debe mantener informado al usuario de lo que está ocurriendo, mediante retroalimentación apropiada dentro de un tiempo razonable.</li>
+                        <li><strong>Relación entre el sistema y el mundo real:</strong> la interfaz debería hablar el lenguaje de los usuarios mediante palabras, frases y conceptos que sean familiares al usuario, más que con palabras o términos vinculados al sistema. Conviene seguir las convenciones del mundo real y hacer que la información aparezca en un orden natural y lógico.</li>
+                        <li><strong>Control y libertad del usuario:</strong> el usuario no es perfecto y hay ocasiones en que los usuarios elegirán las funciones del sistema por error y necesitarán una especie de salida de emergencia; esta debe estar claramente marcada para salir del estado no deseado al que accedieron, sin que por ello tengan que pasar por una serie de pasos. Las funciones de deshacer y rehacer deben estar presentes.</li>
+                        <li><strong>Consistencia y estándares:</strong> hay que evitar la confusión y los usuarios no deberían cuestionarse si acciones, situaciones o palabras diferentes significan en realidad la misma cosa; para ello debes seguir las convenciones establecidas.</li>
+                        <li><strong>Prevención de errores:</strong> en lugar de preocuparse de diseñar cuidadosamente los mensajes de error, es preferible centrarse en un diseño más cuidadoso que precisamente evita que sucedan errores.</li>
+                        <li><strong>Reconocimiento antes que recuerdo:</strong>el usuario no tiene por qué recordar la información que se muestra en un proceso para seguir adelante. Por ese motivo se deben hacer visibles los objetos, acciones y opciones de las que dispone. Las instrucciones de uso del interfaz o sistema deben estar a la vista, o estar claramente disponibles cuando sea necesario.</li>
+                        <li><strong>Flexibilidad y eficiencia de uso:</strong> no todos los usuarios son iguales y, por ello, el sistema debe adaptarse a ellos; en algunos casos con la presencia de aceleradores para varios más hábiles o expertos, que son elementos que los usuarios más novatos no tienen ni quieren usar. En definitiva, se deben ofrecer facilidades y atajos.</li>
+                        <li><strong>Estética y diseño minimalista:</strong> los mensajes o los diálogos que se muestran no deben contener información que sea irrelevante o poco útil. Hay que medir bien la información que se ofrece, ya que cada unidad extra de información en un diálogo,compite con las unidades de información relevante y hace disminuir su visibilidad relativa.</li>
+                        <li><strong>Ayudar a los usuarios a reconocer:</strong> el error es inevitable, pero a la hora de diagnosticar y recuperarse de errores los mensajes de error se deben mostrar al usuario en un lenguaje claro y simple, siempre indicando de forma precisa el problema y sugiriendo una solución al problema o error.</li>
+                        <li><strong>Ayuda y documentación:</strong> lo ideal es que un sistema se use sin instrucciones ni ayuda, pero incluso en los casos en que la interfaz pueda ser usada sin documentación, puede ser necesario o simplemente requerido ofrecer ayuda y documentación. En ese caso, la información debería ser fácil de buscar, estar enfocada en las tareas del usuario, con una lista específica de pasos a desarrollar que no debe ser demasiado extensa.</li>
+                    </ol>
+                </p>
+            </div>
+            <h2 id="5">Identificación del objetivo de la web</h2>
+            <div class="contenido">
+                <p>Cuando estamos desarrollando un sitio web, debemos de tener en cuenta que existen dos forma de llegar a un sitio web:</p>
+                <p>
+                    <ul>
+                        <li>Buscando la empresa y aterrizar a la página principal.</li>
+                        <li>Buscando cualquier cosa y aterrizar en cualquier otra página de tu sitio.</li>
+                    </ul>
+                </p>
+                <p>En ambos casos, SIEMPRE debemos de mostrar de forma clara que ofrece ese sitio web.</p>
+                <h3>Ejemplo de objetivo de la web en la página principal</h3>
+                <p>Veremos por ejemplo la web de cursos EDX.org. A simple vista podemos ver que esta web sigue los siguientes normas:</p>
+                <p>
+                    <ul>
+                        <li>Sitúa el logo en la parte superior izquierda.</li>
+                        <li>Tiene un título bien grande explicando de qué va la página.</li>
+                        <li>Hay un buscador para buscar el curso de forma rápida.</li>
+                        <li>Hay un botón que te permite mostrar todos los cursos.</li>
+                        <li>Muestra la cantidad de gente que ya forma parte de esta comunidad, para dar mucha más confianza.</li>
+                    </ul>
+                </p>
+                <p>Un ejemplo para este punto es la web <strong>EDX</strong> que nos recomienda el libro de teoria</p>
+                <p><img src="resources/edx.JPG" alt="edx" title="edx" id="ajusteImagen2"></p>
+                <p>Si nos movemos en la pagina a cualquier curso de la misma vamos a observar varias cosas:</p>
+                <p>
+                    <ul>
+                        <li>Sigue apareciendo el mismo logo y cabecera.</li>
+                        <li>Con el título, especifica de forma clara de qué va esa página.</li>
+                        <li>Te incita a empezar el curso diciendo el tiempo del curso, que puedes ir a tu ritmo y que es gratis.</li>
+                        <li>Las migas de pan te permiten moverte por las diferentes secciones de la web.</li>
+                    </ul>
+                </p>
+                <p><img src="resources/edx2.JPG" alt="edx" title="edx" id="ajusteImagen2"></p>
+            </div>
+            <h2 id="6">Navegación fácilmente recordada frente a navegación redescubierta.</h2>
+            <div class="contenido">
+                <p>El título habla por sí solo: lo mejor es no tener que volver a hacer lo mismo siempre.</p>
+                <p>Es decir, es preferible una navegación recordada en vez de una descubierta, ya que el cerebro humano tiene unas limitaciones a la hora de procesar información, y para ello se simplifican las interfaces y la información que da al usuario:</p>
+                <p>
+                    <ul>
+                        <li>Eliminar información redundante, excesiva o innecesaria.</li>
+                        <li>Evitar que el usuario tenga que retener información o que tenga que hacer algún esfuerzo mental.</li>
+                        <li>Reproducir los modelos y procesos bien conocidos en la Web.</li>
+                    </ul>
+                </p>
+            </div>
+            <h2 id="7">Experiencia de usuarios</h2>
+            <div class="contenido">
+                <h3>Introducción</h3>
+                <p>La usabilidad de una interfaz es el atributo que mide la facilidad de uso de la misma. Es uno de los elementos más importantes que tenemos que tener en cuenta a la hora de crear un sitio web. Ya que el sitio puede estar bien programado o tener una idea muy buena, pero si no la sabes transmitir bien, el usuario no es capaz de saber cómo funciona el sitio y lo más probable es que se vaya.</p>
+                <h3>UX: User Experience</h3>
+                <p>El User Experience trata de que la aplicación tiene que ser efectiva tanto por el lado del cliente cómo por quién la ha desarrollado. Es decir que todo el mundo debe de poder usar nuestra web. Este campo, se está convirtiendo cada vez más importante, hasta el punto de que ya existe un perfil de experto en UX.</p>
+                <p><strong>¿Como lo hacemos?</strong></p>
+                <p>A la hora de crear una interfaz web debemos:</p>
+                <p>
+                    <ul>
+                        <li>Conocer cuál es el usuario objetivo.</li>
+                        <li>Analizar el comportamiento/uso que hará el usuario.</li>
+                        <li>Ponerse en el lugar del usuario (empatizando haciéndose preguntas cómo: ¿Qué es esto? ¿Qué hay para mí aquí? ¿Qué tengo que hacer para conseguirlo?).</li>
+                    </ul>
+                </p>
+                <h3>Elementos de la experiencia del usuario</h3>
+                <p>La UX es mucho más que usabilidad y abarca al menos varias áreas principales:</p>
+                <p>
+                    <dl>
+                        <dt><strong>Psicología:</strong></dt>
+                        <dd>El diseñador debe de olvidarse de y ponerse a la piel de los usuarios que van a usar esa aplicación. Un consejo para ayudarse, sería hacerse preguntas y comprobar que se encuentre la respuesta en la página.</dd>
+                        <dt><strong>Usabilidad:</strong></dt>
+                        <dd>Debemos de cuidar cada detalle, para que el usuario pueda realizar la acción que deseemos, de la forma más fácil y rápida posible (evitando que le aparezcan errores al usuario).</dd>
+                        <dt><strong>Diseño:</strong></dt>
+                        <dd>No simplemente consiste en hacer un diseño bonito, sino que también debe transmitir confianza y representar bien la marca.</dd>
+                        <dt><strong>Análisis:</strong></dt>
+                        <dd>El Análisis es uno de los aspectos más importantes, aquí debemos de analizar cómo interactúan los usuarios en nuestra web, donde hacen más clics…</dd>
+                        <dt><strong>Copywriting:</strong></dt>
+                        <dd>Esta sección, es la que menos se suele tener en cuenta, pero en cambio es de las más importantes, ya que de nada sirve tener un diseño amigable, atractivo, usable...si luego los textos no son coherentes / no explican de forma clara lo que se quiere transmitir.</dd>
+                    </dl>
+                </p>
+                <h3>El proceso de la UX</h3>
+                <p>La experiencia del usuario, es un proceso de diseño que se está constantemente actualizando… Nuestras webs, van a estar abiertas a todo el mundo, es por eso que debemos de escuchar el feedback de los usuarios y de la competencia, para mantener un sitio actualizado y moderno.</p>
+                <p>Por lo tanto, todos los pasos que voy a nombrar a continuación, debemos de repetirlos con frecuencia.</p>
+                <p><strong>Requerimientos:</strong></p>
+                <p>Cualquier creación de un sitio web, debe de seguir unos requerimientos. Es por eso, que como mínimo, debemos de:</p>
+                <p>
+                    <ul>
+                        <li>Hablar con todos los miembros que están implicados en el desarrollo.</li>
+                        <li>Aceptar solo algunas sugerencias (las más relevantes).</li>
+                        <li>Establecer una barrera para el trabajo del diseñador, no se convierta en una víctima de incompetentes, caprichosos o gente que pone pegas.</li>
+                    </ul>
+                </p>
+                <p><strong>Una primera versión:</strong></p>
+                <p>Antes de saber si la aplicación funciona o no, debemos de hacer pruebas con una primera versión. Esta versión debe de:</p>
+                <p>
+                    <ul>
+                        <li>Cumplir los requisitos.</li>
+                        <li>Estudiar los tipos de usuarios.</li>
+                        <li>Cumplir los principios de usabilidad.</li>
+                        <li>Observar nuestra propia experiencia.</li>
+                    </ul>
+                </p>
+                <p>Es recomendable, primero realizar una versión para el móvil (Mobile First), ya que está comprobado que la mayoría de usuario, visitará nuestra aplicación con el móvil.</p>
+                <h3>Arquitectura de la información</h3>
+                <p>En este paso, debemos de ver cómo organizamos la información. Este punto, depende mucho del tamaño de web que queramos hacer. Es por eso, que se recomienda empezar creando un sitemap.</p>
+                <p>Un sitemap, es una página del sitio donde se muestra toda la información (páginas del sitio web) estructuradas jerárquicamente.</p>
+                <p><strong>TIPOS DE ARQUITECTURAS:</strong></p>
+                <p>Obviamente, no todas las aplicaciones son del mismo tipo, y eso influye en la arquitectura resultante. Algunos tipos comunes de arquitecturas giran en torno a:</p>
+                <p>
+                    <ul>
+                        <li>CATEGORÍAS: Se clasifican los contenidos por grupos. Esta arquitectura es muy usada en los comercios electrónicos.</li>
+                    </ul>
+                </p>
+                <p><img src="resources/1.png" alt="CATEGORÍAS" title="CATEGORÍAS" id="ajusteImagen2"></p>
+                <p>
+                    <ul>
+                        <li>BÚSQUEDAS: Organizamos la información en un buscador. Esta arquitectura es muy usada en aplicaciones de contenido masivo.</li>
+                    </ul>
+                </p>
+                <p><img src="resources/2.png" alt="BÚSQUEDAS" title="BÚSQUEDAS" id="ajusteImagen2"></p>
+                <p>
+                    <ul>
+                        <li>GENTE: Organizamos la información en torno a las personas. Esta arquitectura es muy usada en aplicaciones de redes sociales.</li>
+                    </ul>
+                </p>
+                <p><img src="resources/3.JPG" alt="GENTE" title="GENTE" id="ajusteImagen2"></p>
+                <p>
+                    <ul>
+                        <li>FUNCIONES: El contenido se distribuye en funciones. Un ejemplo sería un botón de hacer una trasferencia en un banco.</li>
+                    </ul>
+                </p>
+                <p><img src="resources/3.png" alt="FUNCIONES" title="FUNCIONES" id="ajusteImagen2"></p>
+                <p>
+                    <ul>
+                        <li>COMBINACIONES: Consiste en mezclar más de una arquitectura en una aplicación. Por ejemplo tener la aplicación organizada por categorías y con un buscador para buscar los productos.</li>
+                    </ul>
+                </p>
+                <h3>Tipos de páginas:</h3>
+                <p>Existen 2 tipos de páginas que son: Estáticas y dinámicas.</p>
+                <p>Páginas estáticas: Muestran un mismo contenido sin cambiar.</p>
+                <p>Podemos usar este tipo de páginas de contacto, quienes somos…</p>
+                <p>Páginas dinámicas: El contenido cambia, la información se ajusta a cada usuario mostrando una mejor experiencia para el usuario.</p>
+                <p>Navegación: La navegación, se suele crear a través de menús o migas de pan.</p>
+                <p>A la hora de crear un menú, es importante que el usuario tenga que hacer la menor cantidad de clics para llegar a su objetivo.</p>
+                <h3>Investigación y observación</h3>
+                <p>La investigación y observación es fundamental a la hora de crear una aplicación. Una única opinión es muy subjetiva, pero el conjunto de muchas nos pueden llevar hacia el objetivo claro.</p>
+                <p>
+                    <ul>
+                        <li>EL USUARIO FRENTE A LA APLICACIÓN: Permitimos que diferentes usuarios prueben nuestra aplicación. Esta fase es fundamental para que se puedan desarrollar las próximas.</li>
+                        <li>OBSERVACIÓN: Observamos al usuario utilizando nuestra aplicación.</li>
+                        <li>ENTREVISTAS: Le realizamos a cada usuario una serie de preguntas muy concretas para mejorar la aplicación.</li>
+                        <li>ENCUESTAS: Le realizamos una serie de preguntas con respuesta corta o seleccionable. Esta opción es mucho menos directa, pero más automática y masiva.</li>
+                        <li>CARD SORTING: Consiste en realizar una lluvia de ideas con los usuarios, apuntando las ideas principales en papeles (post-it), para luego debatir y quedarse con las mejores.</li>
+                    </ul>
+                </p>
+                <h3>Análisis:</h3>
+                <p>Toda la información recogida debe ser analizada para poder extraer conclusiones. Pero además de obtener feedback de los usuarios, podemos usar herramientas externas que recogen datos automáticamente.</p>
+                <p><strong>Google Analytics:</strong></p>
+                <p>Google Analytics, es una herramienta de Google que añadiendo un simple código JS a nuestro sitio web, nos va a permitir analizar el sitio web.</p>
+                <p>Ofreciéndonos información cómo:</p>
+                <p>
+                    <ul>
+                        <li>La edad de los usuarios.</li>
+                        <li>El dispositivo de los usuario.</li>
+                        <li>El navegador.</li>
+                        <li>El país.</li>
+                        <li>La frecuencia del usuario.</li>
+                    </ul>
+                </p>
+                <p><img src="resources/analitics.JPG" alt="Google Analytics" title="Google Analytics" id="ajusteImagen2"></p>
+                <h3>HERRAMIENTAS ESPECÍFICAS PARA UX</h3>
+                <p>A la hora de trabajar nuestro UX, es recomendable ayudarse con herramientas que nos faciliten nuestro trabajo.</p>
+                <p>
+                    <ul>
+                        <li>Prototipado: El prototipo es fundamental para visualizar nuestras ideas y poderlas enseñar a los clientes. Este prototipo no tiene que ser funcional, pero si se debe ser ágil.</li>
+                    </ul>
+                </p>
+                <p><strong>Draw.io</strong></p>
+                <p><a href="https://app.diagrams.net/" id="ejemplos">https://app.diagrams.net/</a></p>
+                <p>Esta herramienta nos permite crear un prototipo de forma muy sencilla y online. Aparte de ofrecernos prototipos, también existen otros tipos de diagramas.</p>
+                <p><img src="resources/draw.JPG" alt="Draw.io" title="Draw.io" id="ajusteImagen2"></p>
+                <p>
+                    <ul>
+                        <li>-Investigación y testeo: Otra parte fundamental, es la opinión de los usuarios y para ello, disponemos de Herramientas que nos facilitarán el trabajo.</li>
+                    </ul>
+                </p>
+                <p><strong>Google Forms</strong></p>
+                <p><a href="https://docs.google.com/forms/u/0/" id="ejemplos">https://docs.google.com/forms/u/0/</a></p>
+                <p>Esta herramienta nos permitirá crear formularios sencillos pero muy funcionales para lo que estamos buscando. Una vez recopilados todos los resultados podemos obtener las estadísticas en diferentes tipos de gráficos.</p>
+                <p><img src="resources/forms.JPG" alt="forms" title="forms" id="ajusteImagen2"></p>
+                <p>
+                    <ul>
+                        <li>Organización de la información: Para organizar la información tenemos las siguientes herramientas:</li>
+                    </ul>
+                </p>
+                <p><strong>Gliffy</strong></p>
+                <p><a href="https://www.gliffy.com/" id="ejemplos">https://www.gliffy.com/</a></p>
+                <p>Con esta herramienta podemos crear mapas mentales, sitemaps… El uso es muy sencillo y parecido al de Draw. Lo malo de esta herramienta es que es de pago, pero nos permite crear una cuenta de prueba para 2 semanas.</p>
+                <p><img src="resources/gliffy.JPG" alt="gliffy" title="gliffy" id="ajusteImagen2"></p>
+                <p>
+                    <ul>
+                        <li>-Análisis y métrica: Para el análisis existen muchas más herramientas a parte de Google Analytics. Hay un tipo de herramientas que es capaz de mostrarnos en qué sitios de tu web la gente pulsa más (zonas calientes).</li>
+                    </ul>
+                </p>
+                <p><strong>Hotjar</strong></p>
+                <p><a href="https://www.hotjar.com/" id="ejemplos">https://www.hotjar.com/</a></p>
+                <p>Esta herramienta nos permite crear un mapa de calor del sitio que deseemos. Lo malo de esta herramienta es que es de pago, pero nos permite crear una cuenta de prueba para 2 semanas.</p>
+                <p><img src="resources/hotjar.JPG" alt="hotjar" title="hotjar" id="ajusteImagen2"></p>
+                <p>
+                    <ul>
+                        <li>A/B Tester: El A/B testing es una herramienta que nos permite crear y comparar dos versiones diferentes de una misma página web. Esto es muy útil, ya que gracias a este tipo de herramientas, podemos encontrar cuál es la mejor versión.</li>
+                    </ul>
+                </p>
+                <p>Google Optimize</p>
+                <p><a href="https://optimize.google.com/" id="ejemplos">https://optimize.google.com/</a></p>
+                <p>Esta herramienta nos va a permitir crear pruebas A/B de forma completamente gratuita y rápida.</p>
+                <p><img src="resources/optimizer.JPG" alt="Google Optimize" title="Google Optimize" id="ajusteImagen2"></p>
+            </div>
+            <h2 id="8">Velocidad de conexión</h2>
+            <div class="contenido">
+                <h3>Factores determinantes de velocidad</h3>
+                <p>La velocidad de carga de una página o aplicación es un factor imprescindible para que tenga éxito. Hoy en día, por esperar 7 segundos damos la página por muerta.</p>
+                <p>En la velocidad de una página pueden influir el tamaño de la misma y la cantidad de ficheros que tenga, como hojas de estilos, ficheros JavaScript, imágenes, etc.</p>
+                <p>Si abrimos muchas páginas web y miramos en las herramientas de desarrollador en la pestaña network, veremos la gran cantidad de archivos que son necesarios para procesar la web.</p>
+                <p>Además, a veces no solo tenemos que cargar los recursos propios, sino que también otros ficheros como el analytics, librerías JavaScript, etc.</p>
+                <h3>CDN: Content Delivery Network</h3>
+                <p>Otro factor que afecta es la proximidad; no es lo mismo que el servidor esté en tu país que en el extranjero. En todos los países hay un punto neutro de internet donde todos los servidores del mundo comparten tráfico de red.</p>
+                <p>Un CDN es una red de contenidos que básicamente acerca los contenidos al usuario de una forma muy obvia: manteniendo una red de servidores que esté presente en la mayor parte de los lugares del planeta posibles.</p>
+                <p><strong>Frameworks, como Angular.js o Bootstrap, se ofrecen a través de CDNs.</strong></p>
+                <h3>Rendimiento web</h3>
+                <p>Es imprescindible que una página web esté optimizada por varios motivos:</p>
+                <p>
+                    <ul>
+                        <li>Las debilidades de rendimiento del protocolo HTTP.</li>
+                        <li>Las interfaces web tienen muchas áreas de mejora.</li>
+                        <li>La velocidad es una mejora en la usabilidad.</li>
+                        <li>Es una ventaja competitiva frente a otros.</li>
+                    </ul>
+                </p>
+                <p><strong>El protocolo HTTP</strong></p>
+                <p>Es el protocolo de transferencia de hipertexto que utilizan los navegadores para comunicarse con los servidores web.</p>
+                <p>A nivel de transporte, es un protocolo TCP, es decir, abre una conexión al puerto del servidor y se queda abierta hasta que finalice la conexión, PERO tiene una conexión para cada fichero:</p>
+                <p>
+                    <ul>
+                        <li>Una conexión para el HTML.</li>
+                        <li>Una conexión para la hoja de estilo.</li>
+                        <li>Una conexión para CADA fichero JavaScript.</li>
+                        <li>Una conexión para cada fichero.</li>
+                        <li>Una conexión por cualquier otra cosa.</li>
+                        <li>Peticiones AJAX a recursos REST.</li>
+                    </ul>
+                </p>
+                <p>Cualquier web cotidiana supera fácilmente las 100 peticiones. Los navegadores escalonan normalmente las peticiones de 8 en 8.</p>
+                <p><strong>Primeras conclusiones para mejorar el rendimiento de las web:</strong></p>
+                <p>
+                    <ul>
+                        <li>Hay que reducir el número de peticiones al servidor.</li>
+                        <li>Hay que reducir el tamaño de los ficheros.</li>
+                        <li>Hay que unir los ficheros JavaScript y CSS en ficheros únicos entre sí.</li>
+                        <li>Hay que integrar el contenido JavaScript y CSS dentro del propio HTML.</li>
+                    </ul>
+                </p>
+                <p>A primera vista parece que volvemos a como normalmente aprendemos a desarrollar, haciéndolo todo junto y mezclado, algo difícilmente mantenible.</p>
+                <p>Hay otros métodos de optimización que no son tan extremos como el anterior:</p>
+                <p><strong>Optimización de imágenes</strong></p>
+                <p>
+                    <ul>
+                        <li>Podemos crear una imagen única que contenga todas en una, y mostrarlas con hojas de estilos.</li>
+                        <li>Podemos optimizar su tamaño, bajando la compresión o la calidad.</li>
+                        <li>Podemos serializar las imágenes e integrarlas dentro del HTML o del CSS.</li>
+                    </ul>
+                </p>
+                <h3>Comportamiento de los navegadores</h3>
+                <p>El proceso para mostrar una página es el siguiente:</p>
+                <p>
+                    <ol type="1">
+                        <li>El usuario indica una url en la barra de navegación y pulsa enter.</li>
+                        <li>El navegador trata de resolver el nombre del host a través de la IP para conectarse al servidor.</li>
+                        <li>Cuando haya resuelto la IP, el navegador abrirá una conexión TCP/IP al puerto 80 si es http o 443 si es https.</li>
+                        <li>Una vez abierto el puerto, le indica la petición según el protocolo HTTP, por ejemplo, “GET /”.</li>
+                        <li>El servidor responde con una serie de cabeceras y el contenido HTML.</li>
+                        <li>El navegador recorre el HTML y cada elemento CSS, JavaScript o de imágenes.</li>
+                    </ol>
+                </p>
+                <p>Todo esto lo hace por cada petición en cuestión de milisegundos.</p>
+                <h3>Comportamiento mejorado</h3>
+                <p>Debido a que el protocolo HTTP no ha evolucionado a la velocidad que evolucionan el resto de actores de la web, los navegadores modernos procuran comportarse de manera eficiente para mejorar la navegación sea como sea la página que se esté visitando.</p>
+                <h3>JavaScript</h3>
+                <p>Con los ficheros JavaScript sucede algo similar. Los navegadores bloquean las peticiones hasta que la información JavaScript esté descargada. Es decir, es un factor importante que el texto JavaScript esté al principio o al final de la página, para saber qué debe cargar primero. Normalmente irá al final.</p>
+                <p>La desventaja de esto es que el script tiene que actualizarse entero cada vez que se actualice. Para solucionar esto, podemos poner nuestro fichero JavaScript en otras aplicaciones (Google Analytics, jQuery...) o programarlo de forma asíncrona (que al actualizar el valor que influya en el JavaScript, que solo actualice ese valor, como por ejemplo, un botón de like).</p>
+                <h3>Conclusiones</h3>
+                <p>Con todo lo que he dicho, parece que la mejor solución es dejarlo todo en un mismo documento. Pero no es así.</p>
+                <p>Ya que no todas las páginas funcionan igual; las hay más sencillas o más complejas; algunas usan el código JavaScript y CSS de una manera y otras de otra. Todo esto afecta a la funcionalidad de la página. Otros motivos son:</p>
+                <p>
+                    <ul>
+                        <li>Se desperdicia la cantidad de caché del navegador.</li>
+                        <li>Se desperdician las ventajas que pueden aportar los CDNs.</li>
+                        <li>Se retrasa el preloading que hacen las webs.</li>
+                        <li>No puede mostrar todo el contenido de la web de golpe, sino que tiene que esperar a las acciones del usuario, como el scroll, para cargar la página. De lo contrario, la página no estaría optimizada.</li>
+                        <li>Usar imágenes inline también impide el uso del sistema de caché. Se pueden usar como fondos en el CSS.</li>
+                    </ul>
+                </p>
+                <p><strong>Mejoras</strong></p>
+                <p>
+                    <ul>
+                        <li>Minimizar las peticiones.</li>
+                        <li>Concatenar y minimizar las hojas de estilos y servirlas al principio de la página.</li>
+                        <li>Concatenar y minimizar el JavaScript desarrollado por nosotros y servirlo al final de la página.</li>
+                        <li>Minimizar el HTML.</li>
+                        <li>Unir imágenes tipo icono en mapas de imágenes.</li>
+                        <li>Reducir calidad de imágenes.</li>
+                        <li>Hacer imágenes inline o serializadas, siempre que no superen el tamaño de 2040 bytes.</li>
+                        <li>Utilizar módulos de comprensión en el servidor web.</li>
+                        <li>Meter contenido CSS o JavaScript inline solamente si es muy pequeño, aproximadamente menor a 4K bytes.</li>
+                    </ul>
+                </p>
+            </div>
+            <h2 id="9">Herramientas y test de verificación.</h2>
+            <div class="contenido">
+                <h3>Herramientas online de comprobación de velocidad</h3>
+                <p><strong>Google Page Speed Insights</strong></p>
+                <p>Además de ofrecer herramientas para automatizar el análisis, Google Developers nos ofrece esta herramienta online que analiza cualquier página y nos indica los puntos de mejora.</p>
+                <p>En la siguiente imagen introducimos la url de la página que vamos a analizar, podemos ver que nota le asigna la aplicación dependiendo de si es para móvil o para ordenador.</p>
+                <p><img src="resources/pagespedd.JPG" alt="Google Page Speed Insights" title="Google Page Speed Insights" id="ajusteImagen2"></p>
+                <p>Una vez analizado la nota de los puntos anteriores nos da una nota de rendimiento con un resumen del punto anterior junto con unos consejos de mejoría.</p>
+                <p><img src="resources/pagesped2.JPG" alt="Google Page Speed Insights" title="Google Page Speed Insights" id="ajusteImagen2"></p>
+                <p><strong>Pingdom Tools</strong></p>
+                <p>En su modo gratuito basta con indicar la URL y el test procede a llevar a cabo una petición contabilizando todas las peticiones derivadas, tiempo de carga, etc. Y ofreciendo una nota final de rendimiento. También se muestra un desglose de cada elemento que debe descargarse y el tiempo que ha necesitado.</p>
+                <p>Nos da una puntuación y un breve resumen de lo que se tiene que mejorar en la página, junto con el tiempo de carga, el tamaño de la paguina y las peticiones que se le hacen a la página.</p>
+                <p><img src="resources/pingdom.JPG" alt="pingdom" title="pingdom" id="ajusteImagen2"></p>
+                <p><img src="resources/pingdom2.JPG" alt="pingdom" title="pingdom" id="ajusteImagen2"></p>
+                <h3>Testing</h3>
+                <p>Cuando se desarrolla una aplicación Web con distintas páginas, comprobar que todo funciona correctamente resulta una tarea necesaria, pero muy tediosa, más aún cuando hay que hacerla cada vez que se hace un cambio. Por suerte contamos con herramientas como Selenium.</p>
+                <p><strong>Selenium</strong></p>
+                <p>Esta herramienta OpenSource nos permite crear toda clase de test para comprobar el correcto funcionamiento de la aplicación Web simulando las acciones de un usuario. Selenium nos permite desarrollar el testeo de distintas maneras y también podremos llevar a cabo el testing a través de herramientas de programación o de plugins de navegador.</p>
+                <p><strong>Selenium-Addon</strong></p>
+                <p>La forma más directa de crear testeos automatización con Selenium es a través de su addon para navegadores, el cual podemos instalar fácilmente a través del repositorio oficial de addons. una vez hecho, veremos el icono del mismo.</p>
+                <p><img src="resources/selenium.JPG" alt="selenium" title="selenium" id="ajusteImagen2"></p>
+                <p>Al pulsarlo se abrirá la herramienta con la cual ya podremos hacer tests. En realidad es tan sencillo como pulsar el botón de grabación, utilizar la web que deseemos testear, y todas las acciones quedarán grabadas en Selenium. De esa manera, podremos reproducir los test siempre que queramos</p>
+                <p><img src="resources/selenium2.JPG" alt="selenium" title="selenium" id="ajusteImagen2"></p>
+                <p><strong>Selenium API</strong></p>
+                <p>Una de las grandes aportaciones de Selenium es que dispone de APIs para desarrollar tests en distintos lenguajes de programación: Java, C#, Python, JavaScript, etc. Una vez desarrollado el test Selenium pondrá en ejecución un navegador y simulará las operaciones que les hayamos indicado. En caso de no recibir alguna respuesta esperada el test falla, de tal manera que podemos detectar errores.</p>
+                <h3>Protractor: tests programados</h3>
+                <p>Selenium es una gran herramienta con la que podemos crear test e2e (end-to-end) de manera muy ágil en cualquier ordenador que tenga un navegador instalado. Pero generalmente los test se hacen mucho más específicos, se programan y se integran dentro de builds o procesos de integración continua.</p>
+                <p>Podemos desarrollar tests e2e para Selenium con los lenguajes más populares, y en este caso mostraremos cómo se llevan a cabo desde uno de los lenguajes esenciales de la Web: JavaScript. Además haremos uso de la infraestructura que hemos utilizado a lo largo de todo este libro.</p>
+                <p>La herramienta que nos permite organizar rápidamente los test es Protractor. Este es un proyecto ideado para llevar a cabo los test e2e de aplicaciones basadas en el framework Angular.js, aunque lo podemos usar perfectamente en cualquier aplicación Web, ya que al ser precisamente e2e no nos importan los lenguajes y librerías que se utilicen, sino el uso de la web en sí.</p>
+                <p><strong>Tipos de tests</strong></p>
+                <p><strong>Test index</strong></p>
+                <p>Se trata de comprobar la página índice. La comprobación básicamente consiste en solicitar la url inicial y comprobar que efectivamente se ha cargado.</p>
+                <p><strong>Test home</strong></p>
+                <p>Se trata de comprobar la página índice. Antes de cada bloque it se ejecuta el código beforeEach. Siempre lo utilizaremos para cargar la página que queremos testear. para cada test la página comenzará desde una carga limpia.</p>
+                <p><strong>Test about</strong></p>
+                <p>Se trata de comprobar que la página about o acerca de que se carga correctamente.</p>
+                <p><strong>Test list</strong></p>
+                <p>Se trata de comprobar la página que lista todos los contactos que tenemos. En definitiva, comprobamos cosas similares a las básicas, además de ver realmente hay una lista de contactos.</p>
+                <p><strong>Test detail</strong></p>
+                <p>Se trata de comprobar las páginas que muestran el detalle de un registro concreto.</p>
+                <p><strong>Test new</strong></p>
+                <p>Se trata de comprobar la página que nos permite introducir nuevos usuarios. Para cada prueba empezando por cargar la página que crea nuevos registros. Comprobaremos si realmente cargamos esa página y, además, si funciona o no su formulario.</p>
+                <p><strong>Test Update</strong></p>
+                <p>Se trata de comprobar la página más compleja, que es la de actualización. Una vez más tenemos que verificar, por un lado, que las páginas tienen el contenido esperado y que, además, la funcionalidad se cumple.</p>
+                <p><strong>Test delete</strong></p>
+                <p>Por último, comprobamos, que la funcionalidad de eliminar sea efectiva.</p>
+            </div>
+            <h2 id="10">Verificación de la usabilidad en diferentes navegadores y tecnologías.</h2>
+            <div class="contenido">
+                <h3>BrowserShots</h3>
+                <p><a href="https://optimize.google.com/" id="ejemplos">https://optimize.google.com/</a></p>
+                <p>Esta es una increíble herramienta online que es capaz de sacar un pantallazo para toda una gama de distintos navegadores. Nosotros no nos tenemos que preocupar más que poner una URL y podremos ver el resultado para todos los navegadores imaginables.</p>
+                <p><img src="resources/ultima.png" alt="BrowserShots" title="BrowserShots" id="ajusteImagen2"></p>
+            </div>
+        </div>
+        <div class="col_derecha">
+            <h2>Contenido a ver</h2>
+            <ul>
+                <li><a href="#1">Tipos de usuario</a></li>
+                <li><a href="#2">Barerras</a></li>
+                <li><a href="#3">Estándares externos</a></li>
+                <li><a href="#4">Análisis</a></li>
+                <li><a href="#5">Identificación</a></li>
+                <li><a href="#6">Navegación fácil</a></li>
+                <li><a href="#7">Experiencia de usuarios</a></li>
+                <li><a href="#8">Velocidad de conexión</a></li>
+                <li><a href="#9">Test</a></li>
+                <li><a href="#10">Verificación de usabilidad</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+       <p>Página creada por: Daniel Gutierrez Legaz</p>
+       <p>TODOS LOS DERECHOS RESERVADOS</p>
+    </div>
+</body>
+</html>
