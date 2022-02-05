@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="EstilosPaginas.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="resources_general/cientifico.png">
+
+    <title>DESARROLLO INTERFACES WEB</title>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#1">Intro</a></li>
+            <li><a href="#2">Style</a></li>
+            <li><a href="#3">Link</a></li>
+            <li><a href="#4">Class/CSS</a></li>
+            <li><a href="#5">Id/CSS</a></li>
+            <li><a href="#6">PseudoClases</a></li>
+            <li><a href="#7">Selectores</a></li>
+            <li><a href="#8">Flexbox</a></li>
+            <li><a href="#9">Transiciones</a></li>
+            <li><a href="#10">Transformaciones</a></li>
+            <li><a href="#11">Animaciones</a></li>
+            <li><a href="#12">MediaQueries</a></li>
+            <li><a href="#13">Grid</a></li>
+        </ul>
+    </nav>
+    <div class="Titulo">
+        <h1>TEMA 2</h1>
+        <h2>USO DE ESTILOS</h2>
+    </div>
+    <div class="Teoria">
+        <div class="col_izquierda">
+            <h2 id="1">Introducción</h2>
+            <div class="contenido">
+               <p>Las hojas de estilo o CSS son un estandar de la W3C para aplicar distintos estilos, formatos y caracteristicas a los documentos como HTML.</p>
+               <p>En la practica son ficheros de texto en los que se van definiendo propiedades concretas para los elementos de una página. Esto ahorra espacio y trabajo en el desarrollo de la misma.</p>
+            </div>
+            <h2 id="2">Inserción de estilos "STYLE"</h2>
+            <div class="contenido">
+                <p>Ademas de añadir estilos desde CSS, también podemos hacerlo desde HTML.</p>
+                <p>Hoy en dia esta técnica esta casi obsoleta, ya que sobre carga el código HTML dificultando su lectura.</p>
+                <p>Para llevar acabo esta practica usaremos la etiqueta style, la podemos usar como atributo a cualquier elemento o en el <strong>head</strong> de nuestra página para añadir los estilos.</p>
+                <p><img src="resources/style.PNG" alt="style" title="style" id="ajusteImagen2"></p>
+            </div>
+            <h2 id="3">Hojas de estilo externas "LINK"</h2>
+            <div class="contenido">
+                <p>Esta técnica es la más usada, ya que es conveniente usar una hoja de estilos definida externamente al HTML, para enlazarla con este, usaremos la etiqueta link, esta la definiremos en el head de nuesta página.</p>
+                <p><img src="resources/link.PNG" alt="link" title="link" id="ajusteImagen2"></p>
+            </div>
+            <h2 id="4">Clasede estilos y atributo class</h2>
+            <div class="contenido">
+                <p>Cuando queremos aplicar estilos diferentes a distintos parrafos, podemos usar en los elementos HTML el atributo <strong>class</strong>, Con esto establecemos una clase a ese elemento.</p>
+                <p>Para poder dar uso en CSS a estas clases dentro de documento CSS debemos usar un punto delante el nombre que le hayamos puesto en el elemento a la clase.</p>
+                <p>En la partica el resultado seria este:</p>
+                <p><img src="resources/class.PNG" alt="class" title="class" id="ajusteImagen2"></p>
+                <p><img src="resources/class2.PNG" alt="class2" title="class2" id="ajusteImagen2"></p>
+            </div>
+            <h2 id="5">Identificador de estilos y atributo ID</h2>
+            <div class="contenido">
+                <p>Cada elemento en nuestra pagina web, podemos identificarlo con un id, un ejemplo practico es cuando tenemos varios parrafos y queremos darle un estilo concreto a alguno de ellos.</p>
+                <p>Para usamos el atributo <strong>id</strong>, en CSS lo utilizaremos con una # seguido del nombre de esa id para darle estilos.</p>
+                <p>En la partica el resultado seria este:</p>
+                <p><img src="resources/id.PNG" alt="id" title="id" id="ajusteImagen2"></p>
+                <p><img src="resources/id2.PNG" alt="id2" title="id2" id="ajusteImagen2"></p>
+            </div>
+            <h2 id="6">Pseudo-Clases</h2>
+            <div class="contenido">
+                <p>Las Pseudo-Clases van un poco más allá de los estilos y permiten controlar elementos circunstanciales de la pagina HTML.</p>
+                <p>Las palabras :hover, :visited, :link, :active son pseudoclases que se pueden añadir a los estilos para controlar esas circunstancias.</p>
+                <p>Encontramos varios tipos de estas Pseudoclases.</p>
+                <h3>Pseudo-Clases Dinámicas</h3>
+                <p>Estas pseudo-clases se utilizan para controlar ciertas circunstancias, como por ejemplo aclarar que un enlace ya se ha visitado en la página o que esté inactivo o incluso dar estilo a un elemento cuanto el puntero del ratón se sitúe encima del elemento.</p>
+                <p>Aparte de lo nombrado anteriormente existen otros tipos de elementos:</p>
+                <p>
+                    <ul>
+                        <li>:link → link no visitado</li>
+                        <li>:visited → link visitado</li>
+                        <li>:active → representa el elemento que el usuario está activando. Cuando se usa el ratón, la activación, generalmente comienza cuando el usuario presiona el botón primario y termina cuando se suelta. Se usa normalmente con a y button.</li>
+                        <li>:hover → al poner el ratón sobre el elemento.</li>
+                        <li>:focus → cuando el elemento recibe el foco.</li>
+                    </ul>
+                </p>
+                <p>Un ejemplo:</p>
+                <p><img src="resources/dinamica.PNG" alt="dinámica" title="dinámica" id="ajusteImagen2"></p>
+                <h3>Pseudo-Clases de Estado</h3>
+                <p>Como su propio nombre indica, estas se usan para remarcar el estado de un elemento de formulario, como por ejemplo si el elemento está desactivado o activado.</p>
+                <p>Además, hay otros tipos como:</p>
+                <p>
+                    <ul>
+                        <li>:enabled → se aplica a todos los campos del formulario que estén activados.</li>
+                        <li>:disabled → para los desactivados. Para desactivarlos hay que aplicar específicamente DISABLED.</li>
+                        <li>:checked → representa cualquier radio, checkbox u option que está marcado o conmutado a un estado on.</li>
+                        <li>:in-range → representa un elemento input cuyo valor actual se encuentra dentro de los límites de rango especificados por los atributos min y max.</li>
+                        <li>:out-of-range → fuera de los límites de rango.</li>
+                        <li>:required → representa cualquier elemento input, select o textarea que tenga el atributo required establecido en él.</li>
+                        <li>:optional → representa cualquier elemento input, select o textareaque NO tenga el atributo required establecido en él.</li>
+                        <li>:valid → representa cualquier elemento o del formulario cuyo contenido se valide satisfactoriamente. Esto permite que los campos válidos adopten fácilmente una apariencia que ayuda al usuario a confirmar que sus datos están formateados correctamente.</li>
+                        <li>:invalid → representa cualquier elemento u otro elemento cuyos contenidos no se puedan validar.</li>
+                        <li>:read-only → para campos de solo lectura.</li>
+                        <li>:read-write → para campos de lectura y escritura que son la mayoría.</li>
+                    </ul>
+                </p>
+                <p>Un ejemplo:</p>
+                <p><img src="resources/estado.PNG" alt="estado" title="estado" id="ajusteImagen2"></p>
+                <h3>Pseudo-Clases de Estructura</h3>
+                <p>Para este apartado tenemos dos tipos:</p>
+                <p>
+                    <ul>
+                        <li>:root → selecciona el elemento raíz de un árbol que representa el documento. En HTML, :root representa el elemento y es idéntico al selector html, excepto que su especificidad es mayor.</li>
+                        <li>:empty → representa cualquier elemento que no tenga hijos. Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco). Los comentarios o las instrucciones de procesamiento no afectan si un elemento se considera vacío.</li>
+                    </ul>
+                </p>
+                <p>Un ejemplo:</p>
+                <p><img src="resources/estructura.PNG" alt="estructura" title="estructura" id="ajusteImagen2"></p>
+                <h3>Pseudo-Clases de Child</h3>
+                <p>Controlan los elementos hijos de un elemento padre html. Tenemos varios tipos:</p>
+                <p>
+                    <ul>
+                        <li>:first-child → representa el primer elemento entre un grupo de elementos hermanos. </li>
+                        <li>:last-child → representa el último elemento entre un grupo de elementos hermanos.</li>
+                        <li>:nth-child(n) → selecciona al hijo n (independientemente del tipo de etiqueta).</li>
+                        <li>:nth-last-child(n) → selecciona el hijo n empezando a contar desde el final.</li>
+                        <li>:only-child → representa un elemento sin hermanos. </li>
+                    </ul>
+                </p>
+                <p>Un ejemplo:</p>
+                <p><img src="resources/child.PNG" alt="child" title="child" id="ajusteImagen2"></p>
+                <h3>Pseudo-Clases de Type</h3>
+                <p>Se utiliza cuando tenemos que seleccionar un elemento y tiene que ser con la etiqueta que digamos.</p>
+                <p>Tenemos varios tipos:</p>
+                <p>
+                    <ul>
+                        <li>:first-of-type → representa el primer elemento de su tipo entre un grupo de elementos hermanos.</li>
+                        <li>:last-of-type → último.</li>
+                        <li>:nth-of-type(n) → selecciona uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos.</li>
+                        <li>:nth-last-of-type(n) → coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final.</li>
+                        <li>:only-of-type → representa un elemento que no tiene hermanos del mismo tipo.</li>
+                    </ul>
+                </p>
+                <p>Un ejemplo:</p>
+                <p><img src="resources/type.PNG" alt="type" title="type" id="ajusteImagen2"></p>
+                <h3>Pseudo-Clases de navegación</h3>
+                <p>Encontramos un solo tipo:</p>
+                <p>
+                    <ul>
+                        <li>:not → selecciona un elemento que no cumpla la condición, se puede poner cualquier selector salvo otro :not.</li>
+                    </ul>
+                </p>
+                <p>Un ejemplo:</p>
+                <p><img src="resources/not.PNG" alt="not" title="not" id="ajusteImagen2"></p>
+            </div>
+            <h2 id="7">Selectores de atributos</h2>
+            <div class="contenido">
+                <p>Desde CSS3 ya se pueden aplicar estilo a los atributos de las etiquetas.</p>
+                <p>Esto da opción a utilizar tanto los atributos como incluso los valores que tienen esos atributos para aplicar los estilos que queramos.</p>
+                <p>Poniendo la práctica, este sera un ejemplo:</p>
+                <h3>
+                    <p>
+                    Esto es un <a href="https://www.google.es/" title="Ir a Google" id="enlaceSelector">enlace a Google</a>
+                    </p>
+                </h3>
+                <p><img src="resources/selectorAT.PNG" alt="selector" title="selector" id="ajusteImagen2"></p>
+                <p><img src="resources/selectorAT2.PNG" alt="selector" title="selector" id="ajusteImagen2"></p>
+                <p>Como vemos su expresión es sencilla, colocamos en CSS el elemento, id o clase y entre corchetes el atributo al que queramos darle estilo.</p>
+            </div>
+            <h2 id="8">Flexbox</h2>
+            <div class="contenido">
+                <p>FLEX y GRID son dos nuevos valores (HTML5) que vamos a poder dar a la propiedad CSS display y que nos van a permitir, junto con otras propiedades, maquetar nuestras páginas web de una manera más fácil a la que se usaba tradicionalmente.</p>
+                <p>Vamos a tener dos elementos:</p>
+                <p>
+                    <ul>
+                        <li>Contenedor</li>
+                        <li>Items</li>
+                    </ul>
+                </p>
+                <p>Lo primero que hay que hacer es darle un valor a la propiedad DISPLAY del contenedor. Existen dos valores posibles:</p>
+                <p>
+                    <ul>
+                        <li>Display: flex → Permite que el contenedor sea de bloque. Similar a block, ocupa todo el ancho del padre.</li>
+                        <li>Display:inline-flex → Permite que el contenedor sea de línea. Similar a inline-block, ocupa solo el contenido.</li>
+                    </ul>
+                </p>
+                <h3>Elementos de la maquetación Flex</h3>
+                <p>Contenedor: es el elemento padre que tendrá en su interior cada uno de los ítems flexibles.</p>
+                <p>En Flex establecemos las propiedades al elemento padre y se modificará la posición de los elementos flexibles dentro de él.</p>
+                <p>
+                    <ul>
+                        <li>Eje Principal: los contenedores flexibles tendrán una orientación principal específica. Por defecto es en horizontal (en fila).</li>
+                        <li>Eje Secundario: los contenedores también tendrán una orientación secundaria, perpendicular a la principal. Si la principal es en horizontal, la secundaria será en vertical y viceversa.</li>
+                    </ul>
+                </p>
+                <p><img src="resources/flex1.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+                <p>Ítems: cada uno de los hijos flexibles que tendrá dentro el contenedor en su interior.</p>
+                <p><img src="resources/flex2.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+                <p>Las cajas flexibles son los ítems o hijos directos del contenedor, el contenedor es el contexto al que pertenecen los ítems.</p>
+                <p><img src="resources/flex3.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+                <p>Elementos considerados flexibles dentro de un contenedor display:flex:</p>
+                <p>
+                    <ul>
+                        <li>Si tenemos un DIV con un display:flex con un AFTER o BEFORE (pseudoelementos) éste será flex-item que podremos controlar porque serán flexibles.</li>
+                        <li>El texto también se considera un hijo del contenedor. Ej: si tenemos un div con display:flex y dentro del div “Hola a todos”. Esta será una caja flexible aunque técnicamente no sea caja sino texto.</li>
+                    </ul>
+                </p>
+                <h3>Dirección de los elementos flexibles</h3>
+                <p>Como ya hemos visto anteriormente, existen 2 ejes para colocar los elementos:</p>
+                <p>
+                    <ul>
+                        <li>EJE PRINCIPAL</li>
+                        <li>EJE CRUZADO O SECUNDARIO</li>
+                    </ul>
+                </p>
+                <p><img src="resources/flex4.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+                <p>Utilizando la propiedad FLEX-DIRECTION podemos modificar la dirección del eje principal del contenedor para que se oriente en horizontal (por defecto) o en vertical. Los cuatro posibles valores son:</p>
+                <p>
+                    <ul>
+                        <li>row (default): dirección del eje principal horizontal.<p><img src="resources/flex5.PNG" alt="selector" title="flex" id="ajusteImagen2"></p></li>
+                        <li>row-reverse: dirección del eje principal horizontal invertido.<p><img src="resources/flex6.PNG" alt="selector" title="flex" id="ajusteImagen2"></p></li>
+                        <li>column: dirección del eje principal en vertical.<p><img src="resources/flex7.PNG" alt="selector" title="flex" id="ajusteImagen2"></p></li>
+                        <li>column-reverse: dirección del eje principal en vertical invertido.<p><img src="resources/flex8.PNG" alt="selector" title="flex" id="ajusteImagen2"></p></li>
+                    </ul>
+                </p>
+                <h3>Ajuste de los elementos flexibles (si no caben)</h3>
+                <p>Se realiza con la propiedad FLEX-WRAP.</p>
+                <p>
+                    <ul>
+                        <li>nowrap (default): establece los ítems en una sola línea.</li>
+                        <li>wrap: los elementos flexibles se disponen en múltiples líneas si no caben. De arriba a abajo. Modo multilínea.</li>
+                        <li>wrap-reverse: lo mismo que el anterior pero de abajo a arriba. Modo multilínea.</li>
+                    </ul>
+                </p>
+                <p><img src="resources/flex9.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+                <p>FLEX-FLOW (juntando la dirección y el ajuste)</p>
+                <p>flex-flow: flex-direction flex-wrap;</p>
+                <h3>ALINEACIONES</h3>
+                <p><b>JUSTIFY-CONTENT:</b> se utiliza para alinear los ítems del eje principal (por defecto, el horizontal).</p>
+                <p>Los posibles valores son:</p>
+                <p>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>space-evently</li>
+                    </ul>
+                </p>
+                <p><img src="resources/flex10.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+                <p><b>ALIGN-ITEMS:</b> usada para alinear los ítems del eje secundario (por defecto el vertical).</p>
+                <p>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>strech</li>
+                        <li>baseline</li>
+                    </ul>
+                </p>
+                <p><img src="resources/flex11.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+                <h3>Alineación Vertical-Wrap (tengo varias líneas de elementos flexibles)</h3>
+                <p>Alineación vertical cuando hay varias líneas. ALIGN-CONTENT</p>
+                <p>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>stretch</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                    </ul>
+                </p>
+                <p><img src="resources/flex12.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+                <h3>Orden</h3>
+                <p>Permite modificar el orden normal en el que se van a mostrar los elementos flexibles añadiendoles la propiedad CSS ORDER. Solo afecta a la representación visual de los elementos.</p>
+                <p>A diferencia del resto de propiedades, ésta si se le aplica al elemento flexible. Puede tomar cualquier valor entero y su valor por defecto es el 0.</p>
+                <p>Los elementos estarán dispuestos en orden ascendente según el valor de order. En caso de empate el que estuviera antes en el código.</p>
+                <h3>Tamaño de elementos flexibles</h3>
+                <p>Propiedades que permiten modificar el tamaño de los elementos flexibles.</p>
+                <p>
+                    <ul>
+                        <li>flex-grow → el factor de crecimiento de un elemento flexible cuando se distribuye el espacio restante . Por defecto 1 pero se debe indicar en todos.<p><img src="resources/flex13.PNG" alt="selector" title="flex" id="ajusteImagen2"></p></li>
+                        <li>flex-shrink → el factor de reducción de un elemento flexible cuando sobrepasan el tamaño del contenedor. Por defecto 1 pero se debe indicar en todos.<p><img src="resources/flex14.PNG" alt="selector" title="flex" id="ajusteImagen2"></p></li>
+                        <li>flex-basis → tamaño de un elemento antes de que el espacio restante (negativo o positivo) se distribuya. (auto por defecto).<p><img src="resources/flex15.PNG" alt="selector" title="flex" id="ajusteImagen2"></p></li>
+                    </ul>
+                </p>
+                <h3>Alineación vertical individual (a uno de los elementos flexibles)</h3>
+                <p>Desde el contenedor FLEX, si queremos que un elemento tenga alineación propia ALIGN-SELF. Se le añade esta propiedad al elemento flexible en cuestión.</p>
+                <p>ALIGN-ITEMS lo utilizábamos para la alineación vertical de todos los elementos flexibles a la vez.</p>
+                <p>Sobreescribe a ALIGN-ITEMS.</p>
+                <p>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>strench</li>
+                        <li>baseline</li>
+                    </ul>
+                </p>
+                <p><img src="resources/flex16.PNG" alt="selector" title="flex" id="ajusteImagen2"></p>
+            </div>
+            <h2 id="9">Transiciones</h2>
+            <div class="contenido">
+                <p>Las transiciones son uno de los efectos más utilizados hasta ahora, y hace rivalidad a la pseudoclase hover. Las transiciones permiten aplicar estilos diferentes entre estados de una manera más amplia.</p>
+                <p>Una de las ventajas de usar transiciones es que se puede utilizar una medida de tiempo a través de la cual se aplica el cambio de estilo.</p>
+                <p>Hay varios elementos que componen la transición:</p>
+                <p>
+                    <ul>
+                        <li>all: se aplica a todos los estilos cambiantes.</li>
+                        <li>1s: segundos que tarda la transición.</li>
+                        <li>ease: modo en que se produce la transición.</li>
+                        <li>0s: es un retardo que se puede aplicar para que se empiece a aplicar la transición.</li>
+                    </ul>
+                </p>
+                <p>Cada uno de estos valores se puede especificar en las siguientes propiedades:</p>
+                <p>
+                    <ul>
+                        <li>transition-property: indica a qué atributos aplicamos la transición.</li>
+                        <li>transition-duration: tiempo de duración de la transición.</li>
+                        <li>transition-timing-function: la forma de ir cambiando con las opciones: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier.</li>
+                        <li>transition-delay: puede ponerse un valor de retardo, incluso negativo, para que la transición se aplique con un efecto de que ya ha progresado.</li>
+                    </ul>
+                </p>
+                <p>Es posible también aplicar diferentes transiciones en momentos de tiempo distintos simplemente creando una lista en las propiedades transition-property y transition-duration.</p>
+            </div>
+            <h2 id="10">Transformaciones</h2>
+            <div class="contenido">
+                <p>Las transformaciones son mecanismos relativamente simples ya que no hacen sino aplicar un cambio de estilo gradual, pero los estilos siguen siendo los estilos conocidos hasta ahora.</p>
+                <p>Podemos aplicar las transiciones de la siguiente manera:</p>
+                <p>
+                    <ul>
+                        <li>Scale: cambia de tamaño los elementos.</li>
+                        <li>Translate: cambia de posición a izquierda, derecha, arriba o abajo.</li>
+                        <li>Rotate: gira o hace rotar elementos en determinados grados.</li>
+                        <li>Skew: distorsiona los elementos.</li>
+                        <li>Matrix: permite mover y transformar con precisión de píxel.</li>
+                    </ul>
+                </p>
+                <p>Además de estas transformaciones que se basan en el eje central existen otras. Mediante la propiedad transform-origin se puede cambiar ese punto con dos valores que modifican el cambio en el eje horizontal y vertical.</p>
+                <p>También existen transformaciones 3D, estas ofrecen todo un mundo de posibilidades. En este caso es bastante probable que les afecte las limitaciones de los dispositivos donde se ejecuten, ya que los requerimientos de la tecnología 3D son elevados.</p>
+            </div>
+            <h2 id="11">Animaciones</h2>
+            <div class="contenido">
+                <p>Las animaciones que introduce CSS3 se basan en el sistema de keyframes, algo que debería resultar familiar a Flash. En ese tipo de herramientas se contaba con líneas temporales donde se iban aplicando distintas transformaciones.</p>
+                <p>Para aplicar esto usaremos la etiqueta animation y al igual que las anteriores nombradas, esta de desglosa en otras más concretas:</p>
+                <p>
+                    <ul>
+                        <li>animation-name: nombre de la animación definida previamente.</li>
+                        <li>animation-duration: tiempo de animación en segundos, permitiendo fracciones.</li>
+                        <li>animation-timing-function: función de animación, como las vistas en las transiciones, ease, ease-in, etc.</li>
+                        <li>animation-iteration.count: número de iteraciones de animación pudiendo ser infinito.</li>
+                        <li>animation-play-state: estado de la animación.</li>
+                        <li>animation-delay: retardo para el inicio de la animación en segundos.</li>
+                        <li>animation-fill-mode: modo de relleno.</li>
+                    </ul>
+                </p>
+            </div>
+            <h2 id="12">Media-Queries</h2>
+            <div class="contenido">
+                <p>Las Media Queries son un mecanismo introducido en CSS3 que permiten aplicar estilos según el tipo de medio en el que se muestran los documentos. A través del selector @media y aplicando distintas condiciones como el ancho del medio, colores, etc.</p>
+                <p>Hay que tener en cuenta el amplio abanico de pantallas, que van desde 4 hasta 42 pulgadas.</p>
+                <h3>TIPOS DE MEDIOS</h3>
+                <p>La etiqueta media reconocen varios tipos de medios predefinidos, al margen de sus propiedades, estas son:</p>
+                <p>
+                    <ul>
+                        <li>all: todos los tipos de medios.</li>
+                        <li>print: impresoras.</li>
+                        <li>screen: pantallas de ordenadores, tablets, móviles, etc.</li>
+                        <li>speech: para lectores de pantalla.</li>
+                    </ul>
+                </p>
+                <h3>CONDICIONES</h3>
+                <p>Además del ancho existen una gran variedad de condiciones para aplicar determinado tipo de estilos a un documento.</p>
+                <p>Entres las diferentes condiciones, las encontramos de forma genérica, como mínimos o como máximos y otras muchas más, a continuación vamos a nombrar algunas de ellas:</p>
+                <p>
+                    <ul>
+                        <li>aspect-ratio: indica el ratio de anchura y altura del viewport.</li>
+                        <li>color-index: indica el número de colores que el dispositivo puede mostrar.</li>
+                        <li>device-height: indica el alto del dispositivo de salida.</li>
+                        <li>max-monochrome: indica el máximo de bits por color en un dispositivo monocromo.</li>
+                        <li>min-width: indica el ancho mínimo de la pantalla.</li>
+                        <li>orientation: indica la orientación de la pantalla (landscape o portrait).</li>
+                        <li>scan: indica el proceso de escaneo del dispositivo de salida.</li>
+                    </ul>
+                </p>
+                <h3>OPERADORES LÓGICOS</h3>
+                <p>Al igual que en los lenguajes de programación, las media queries permiten el uso de expresiones similares a las usadas para crear expresiones condicionales.</p>
+                <p>Tenemos varios tipos:</p>
+                <p>
+                    <ul>
+                        <li>Operadores AND</li>
+                        <li>Operador OR</li>
+                        <li>Operador NOT</li>
+                    </ul>
+                </p>
+            </div>
+            <h2 id="13">GRID</h2>
+            <div class="contenido">
+                <p>Es un sistema de maquetación considerado más potente que flexbox ya que permite trabajar con filas y columnas y no en una dimensión como hace flexbox.</p>
+                <p>Se compone de dos elementos:</p>
+                <p>
+                    <ul>
+                        <li>Contenedor GRID: display:grid (comportamiento contenedor de bloque), display:inline-grid (comportamiento contenedor de línea)</li>
+                        <li>Elementos del grid o ítems hijos directamente descendientes del contenedor grid serán los que colocaremos.</li>
+                    </ul>
+                </p>
+                <h3>ESTRUCTURA DEL GRID</h3>
+                <p>Es necesario crear la estructura del grid especificando cuántas columnas y filas va a tener el contenedor. Para ello:</p>
+                <p>1.- Dar al contenedor grid la propiedad Display: Grid/Inline-grid.</p>
+                <p>2.- Aplicar la estructura al contenedor:</p>
+                <p>
+                    <ul>
+                        <li>grid-template-columns: número de columnas del grid y tamaño de las mismas.<p><img src="./resources/grid1.PNG" alt="grid1"></p></li>
+                        <li>grid-template-rows: número de filas del grid y tamaño de las mismas.<p><img src="./resources/grid2.PNG" alt="grid2"></p></li>
+                        <li>row-gap: separación entre filas.</li>
+                        <li>column-gap: separación entre columnas.<p><img src="./resources/grid3.PNG" alt="grid3"></p></li>
+                    </ul>
+                </p>
+                <h3>DISPOSICIÓN DE LOS ELEMENTOS</h3>
+                <p>Los elementos se colocan solos pero también podemos colocarlos.Para especificar el área a ocupar el elemento (hijo directo) utilizamos las siguientes propiedades:</p>
+                <p><img src="./resources/grid4.PNG" alt="grid4"></p>
+                <p>Se pueden juntar estas propiedades:</p>
+                <p>
+                    <ul>
+                        <li>grid-column:start/end;</li>
+                        <li>grid-row: start/end;</li>
+                        <li>grid: row-start column-start row-end column-end;</li>
+                    </ul>
+                </p>
+                <h4>Disposición de los elementos con ÁREAS GRID (utilizando nombres)</h4>
+                <p>Si no queremos especificar el tamaño para cada elemento del GRID podemos darles nombre a su propiedad grid-area y usar esos nombres en la propiedad grid-tamplate-area.</p>
+                <p>Etiquetas:</p>
+                <p>
+                    <ul>
+                        <li>grid-template-areas → Al contenedor (container, main…)</li>
+                        <li>grid-area → A cada sección de nuestra web le asignamos un grid-area.</li>
+                    </ul>
+                </p>
+                <p><img src="./resources/grid5.PNG" alt="grid5"></p>
+                <h3>ALINEACIÓN HORIZONTAL (dentro de la celda)</h3>
+                <p>Para alinear horizontalmente el contenido que hay dentro de cada celda se usará la propiedad CSS JUSTIFY-ITEMS. Valores: stretch por defecto</p>
+                <p><img src="./resources/grid6.PNG" alt="grid6"></p>
+                <h3>ALINEACIÓN VERTICAL (dentro de la celda)</h3>
+                <p>Para alinear verticalmente el contenido que hay dentro de cada celda se usará la propiedad CSS ALIGN-ITEMS. Valores:</p>
+                <p><img src="./resources/grid7.PNG" alt="grid7"></p>
+                <p>Se pueden juntar las dos alineaciones anteriores con la propiedad PLACE-ITEMS.<strong> place-item: vertical horizonta </strong></p>
+                <p>En el caso de que queramos que uno de los ítems hijos tengan una distribución diferente al resto, aplicamos la propiedad JUSTIFY-SELF o ALIGN-SELF sobre el ítem hijo y esto sobreescribe su distribución.</p>
+                <h3>DISTRIBUCIÓN DENTRO DEL CONTENEDOR</h3>
+                <p>En el caso de que el GRID no ocupe todo el ancho de la página podemos distribuirlo con las propiedades CSS JUSTIFY-CONTENT (horizontal) y ALIGN-CONTENT (vertical).</p>
+                <p>
+                    <ul>
+                        <li>JUSTIFY-CONTENT: respecto al ancho de la página en la que está.<p><img src="./resources/grid8.PNG" alt="grid8"></p></li>
+                        <li>ALIGN-CONTENT: respecto al alto de la página en la que están.<p><img src="./resources/grid9.PNG" alt="grid9"></p></li>
+                        <li>PLACE-CONTENT: place-content: vertical horizontal o place-content: start end.</li>
+                    </ul>
+                </p>
+                <h3>COLOCACIÓN IMPLÍCITA</h3>
+                <p>La colocación implícita de los elementos GRID es lo que sucede cuando colocamos elementos grid fuera de la estructura que se ha definido en el contenedor grid o cuando no les damos posición.</p>
+                <p>Propiedades aplicamos al contenedor:</p>
+                <p>
+                    <ul>
+                        <li>grid-auto-columns: anchura que se le da a las columnas de fuera de la estructura.</li>
+                        <li>grid-auto-rows: altura de las filas de fuera del grid.<p><img src="./resources/grid10.PNG" alt="grid10"></p></li>
+                        <li>grid-auto-flow: si tengo elementos sin definir una colocación en el contenedor grid, esta propiedad define cómo se van a colocar esos elementos. Valores:
+                            <ul>
+                                <li>row: rellena las filas primero (opción por defecto).</li>
+                                <li>column: rellena las columnas primero.</li>
+                                <li>dense: intenta rellenar primero los huecos si tiene elementos más pequeños. Puede cambiar el orden de los elementos así que hay que tener cuidado.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="col_derecha">
+            <h2>Contenido a ver</h2>
+            <ul>
+                <li><a href="#1">Introducción</a></li>
+                <li><a href="#2">Style</a></li>
+                <li><a href="#3">Link</a></li>
+                <li><a href="#4">Class/CSS</a></li>
+                <li><a href="#5">Id/CSS</a></li>
+                <li><a href="#6">PseudoClases</a></li>
+                <li><a href="#7">Selectores</a></li>
+                <li><a href="#8">Flexbox</a></li>
+                <li><a href="#9">Transiciones</a></li>
+                <li><a href="#10">Transformaciones</a></li>
+                <li><a href="#11">Animaciones</a></li>
+                <li><a href="#12">MediaQueries</a></li>
+                <li><a href="#13">Grid</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+       <p>Página creada por: Daniel Gutierrez Legaz</p>
+       <p>TODOS LOS DERECHOS RESERVADOS</p>
+    </div>
+</body>
+</html>
