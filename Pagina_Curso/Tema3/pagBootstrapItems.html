@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../resources_general/cientifico.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">TEMA 3</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContenidoInteractivo.html">Contenido interactivo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Bootstrap</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#cards">Card</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#boton">Buttons</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#alerta">Alerts</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#drop">Dropdowns</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#spin">Spinners</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#nav">Navbar</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#toast">Toast</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#list">List Groups</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#badge">Badge</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#modal">Modal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Teoría</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Titulo-->
+    <div class="container-fluid w-100 text-white" id="titulo">
+        <br>
+        <br>
+        <h2 class="display-1 text-center">10 elementos Bootstrap</h2>
+        <br>
+        <br>
+    </div>
+    <!--Contenido-->
+    <div class="container mt-4 mb-3">
+        <div class="row">
+            <div class="col-lg-4 me-4" id="colIzquierda">
+                <!--TEORIA TEMA3-->
+                <h4 class="text-center mt-1" id="cards">Cards</h4>
+                <p>Una Card es un contenedor de contenido flexible y extensible. Incluye opciones para encabezados y pies de página, una amplia variedad de contenido, colores de fondo contextuales y potentes opciones de visualización. Si está familiarizado con Bootstrap 3, las tarjetas reemplazan nuestros viejos paneles, pozos y miniaturas. Una funcionalidad similar a esos componentes está disponible como clases de modificadores para tarjetas.</p>
+                <p>Las Cards admiten una amplia variedad de contenido, incluidas imágenes, texto, grupos de listas, enlaces y más. A continuación veremos un ejemplo de uso.</p>
+                <!--Ejemplo Card-->
+                <div class="card" style="width: 18rem;">
+                    <img src="./resources/176252_preview.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Esto es un ejemplo de uso de las Cards.</p>
+                    </div>
+                </div>
+                <p>Como este ejemplo podemos realizar muchos más, como poner soperposición de texto a una imagen, colocar textos donde queramos, hacer deltro del card un grupo de listas, etc... </p>
+                <p>Puede ver estos ejemplos nombrados en la url: <a href="https://getbootstrap.com/docs/5.0/components/card/" target="_blanck">Pincha aquí</a></p>
+                <h4 class="text-center mt-1" id="boton">Buttons</h4>
+                <p><b>EJEMPLOS</b></p>
+                <p>Bootstrap incluye varios estilos de botones predefinidos, cada uno con su propio propósito semántico, con algunos extras incluidos para un mayor control.</p>
+                <p>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </p>
+                <p><b>Deshabilitar ajuste de texto</b></p>
+                <p>Si no desea que el texto del botón se ajuste, puede agregar la <b>.text-nowrapclase</b> al botón. En Sass, puede configurar <b>$btn-white-space: nowrap</b> para deshabilitar el ajuste de texto para cada botón.</p>
+                <p><b>Etiquetas de botón</b></p>
+                <p>Las .btnclases están diseñadas para ser utilizadas con el <b>button</b> elemento. Sin embargo, también puede usar estas clases en elementos <b>a</b> o <b>input</b>(aunque algunos navegadores pueden aplicar una representación ligeramente diferente).</p>
+                <p>Cuando se utilizan clases de botón en <b>a</b> elementos que se utilizan para activar la funcionalidad en la página (como el contenido colapsado), en lugar de vincular a nuevas páginas o secciones dentro de la página actual, estos vínculos deben tener una forma <b>role="button"</b> adecuada para transmitir su propósito a las tecnologías de asistencia, como lectores de pantalla</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p>
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
+                    <button class="btn btn-primary" type="submit">Button</button>
+                    <input class="btn btn-primary" type="button" value="Input">
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                </p>
+                <p><b>Botones de contorno</b></p>
+                <p>¿Necesita un botón, pero no los fuertes colores de fondo que traen? Reemplace las clases de modificador predeterminadas con las <b>.btn-outline-*</b>que eliminan todas las imágenes y colores de fondo en cualquier botón.</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p>
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </p>
+                <p>Tenemos muchas mas funciones como la talla del botón especificando <b>btn-lg</b> si queremos un botón grande o <b>btn-sm</b> si queremos un boton pequeño. También podemos deshabilitar el botón especificando <b>disabled</b>.</p>
+                <h4 class="text-center mt-1" id="alerta">Alerts</h4>
+                <p>Proporcione mensajes de retroalimentación contextuales para las acciones típicas de los usuarios con el puñado de mensajes de alerta disponibles y flexibles.</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p>
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert—check it out!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                    </div>
+                </p>
+                <p><b>Color de enlace</b></p>
+                <p>Use la <b>.alert-linkclase</b> de utilidad para proporcionar rápidamente enlaces de colores coincidentes dentro de cualquier alerta.</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p>
+                    <div class="alert alert-primary" role="alert">
+                        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                        A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                        A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                </p>
+                <p><b>Iconos</b></p>
+                <p>Del mismo modo, puede usar las utilidades de flexbox y los íconos de Bootstrap para crear alertas con íconos. Dependiendo de sus íconos y contenido, es posible que desee agregar más utilidades o estilos personalizados.</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p>
+                    <div class="alert alert-primary d-flex align-items-center" role="alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <div>
+                            An example alert with an icon
+                        </div>
+                    </div>
+                </p>
+                <p><b>Dismissing</b></p>
+                <p>Con el complemento JavaScript de alerta, es posible descartar cualquier alerta en línea. Así es cómo:</p>
+                <p>
+                    <ul>
+                        <li>Asegúrese de haber cargado el complemento de alerta o el JavaScript de Bootstrap compilado.</li>
+                        <li>Agregue un botón de cierre y la .alert-dismissibleclase, que agrega relleno adicional a la derecha de la alerta y posiciona el botón de cierre.</li>
+                        <li>En el botón de cerrar, agregue el data-bs-dismiss="alert"atributo, que activa la funcionalidad de JavaScript. Asegúrese de usar el button elemento con él para un comportamiento adecuado en todos los dispositivos.</li>
+                        <li>Para animar las alertas al descartarlas, asegúrese de agregar las clases .fadey ..show</li>
+                    </ul>
+                </p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </p>
+                <h4 class="text-center mt-1" id="drop">Dropdown</h4>
+                <p>Alterne las superposiciones contextuales para mostrar listas de enlaces y más con el complemento desplegable Bootstrap.</p>
+                <p><b>Visión de conjunto</b></p>
+                <p>Los menús desplegables son superposiciones contextuales que se pueden alternar para mostrar listas de enlaces y más. Se hacen interactivos con el complemento de JavaScript desplegable de Bootstrap incluido. Se alternan al hacer clic, no al pasar el mouse; esta es una decisión de diseño intencional.</p>
+                <p>Los menús desplegables se basan en una biblioteca de terceros, Popper , que proporciona posicionamiento dinámico y detección de ventana gráfica. Asegúrese de incluir popper.min.js antes del JavaScript de Bootstrap o use <b>bootstrap.bundle.min.js</b>/<b>bootstrap.bundle.jsque</b> contiene Popper. Popper no se usa para posicionar los menús desplegables en las barras de navegación, ya que no se requiere un posicionamiento dinámico.</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p><b>Botón único</b></p>
+                <p>Cualquiera <b>.btn</b> se puede convertir en un menú desplegable con algunos cambios de marcado. Así es como puede ponerlos a trabajar con cualquiera de los button elementos:</p>
+                <p>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                             <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </p>
+                <p>Y con elementos a :</p>
+                <p>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </p>
+                <p>La mejor parte es que también puedes hacer esto con cualquier variante de botón:</p>
+                <p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Action
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </p>
+                <p><b>Split button</b></p>
+                <p>Del mismo modo, cree menús desplegables de botones divididos con prácticamente el mismo marcado que los menús desplegables de un solo botón, pero con la adición de <b>.dropdown-toggle-split</b> un espacio adecuado alrededor del símbolo de intercalación desplegable.</p>
+                <p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger">Action</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </p>
+                <p>Como con los botones podemos especificarle la talla ademas de poder desplegar el menu en la dirección que queramos.</p>
+                <p>En esta web hemos utilizado los dropdowns en el nav para ir a los contenidos mas comodamente.</p>
+                <h4 class="text-center mt-1" id="spin">Spinners</h4>
+                <p>Los "spinners" de Bootstrap se pueden usar para mostrar el estado de carga en sus proyectos. Están construidos solo con HTML y CSS, lo que significa que no necesita JavaScript para crearlos. Sin embargo, necesitará JavaScript personalizado para alternar su visibilidad. Su apariencia, alineación y tamaño se pueden personalizar fácilmente con nuestras increíbles clases de utilidad.</p>
+                <p>Por motivos de accesibilidad, cada cargador aquí incluye role="status"un archivo <code>span class="visually-hidden"Loading.../span</code>.</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p><b>Hilandero de borde</b></p>
+                <p>
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </p>
+                <p><b>Con colores</b></p>
+                <p>
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-secondary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-info" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-dark" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </p>
+                <p><b>Hilandero creciente</b></p>
+                <p>
+                    <div class="spinner-grow" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </p>
+                <p><b>Con colores</b></p>
+                <p>
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-secondary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-info" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-dark" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </p>
+                <p>Ademos podemos posicionarlo y darle tamaño ademas de añadir spinners a botonos como vamos a ver a continuación:</p>
+                <p>
+                    <button class="btn btn-primary" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        <span class="visually-hidden">Loading...</span>
+                    </button>
+                    <button class="btn btn-primary" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                    </button>
+                </p>
+                <h4 class="text-center mt-1" id="nav">Navbar</h4>
+                <p>Esto es lo que necesita saber antes de comenzar con la barra de navegación:</p>
+                <p>
+                    <ul>
+                        <li>Las barras de navegación requieren un envoltorio para las clases .navbarde combinación de colores.navbar-expand{-sm|-md|-lg|-xl|-xxl} y colapso receptivo.</li>
+                        <li>Las barras de navegación y su contenido son fluidos de forma predeterminada. Cambie el contenedor para limitar su ancho horizontal de diferentes maneras.</li>
+                        <li>Utilice nuestras clases de utilidad de espaciado y flexión para controlar el espaciado y la alineación dentro de las barras de navegación.</li>
+                        <li>Las barras de navegación responden de manera predeterminada, pero puede modificarlas fácilmente para cambiar eso. El comportamiento receptivo depende de nuestro complemento Collapse JavaScript.</li>
+                        <li>Garantice la accesibilidad mediante el uso de un elemento nav o, si utiliza un elemento más genérico como un div, agregue un role="navigation" a cada barra de navegación para identificarla explícitamente como una región de referencia para los usuarios de tecnologías de asistencia.</li>
+                        <li>Indique el elemento actual utilizando aria-current="page" para la página actual o aria-current="true" para el elemento actual en un conjunto.</li>
+                    </ul>
+                </p>
+                <p><b>Contenido compatible</b></p>
+                <p>Las barras de navegación vienen con soporte integrado para un puñado de subcomponentes. Elija entre los siguientes según sea necesario:</p>
+                <p>
+                    <ul>
+                        <li>.navbar-brand para el nombre de su empresa, producto o proyecto.</li>
+                        <li>.navbar-nav para una navegación liviana y de altura completa (incluido el soporte para menús desplegables).</li>
+                        <li>.navbar-toggler para usar con nuestro complemento de colapso y otros comportamientos de alternancia de navegación.</li>
+                        <li>Utilidades de flexión y espaciado para cualquier control de formulario y acción.</li>
+                        <li>.navbar-text para agregar cadenas de texto centradas verticalmente.</li>
+                        <li>.collapse.navbar-collapse para agrupar y ocultar el contenido de la barra de navegación por un punto de interrupción principal.</li>
+                        <li>Agregue un opcional .navbar-scroll para configurar max-heighty desplazarse por el contenido de la barra de navegación expandida .</li>
+                    </ul>
+                </p>
+                <p id="subtitulo">EJEMPLOS</p>
+                <p><b>NavBar con icono</b></p>
+                <p>
+                    <nav class="navbar navbar-light bg-dark">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">
+                                <img src="./resources/Bootstrap_logo.svg.png" alt="" width="30" height="24">
+                            </a>
+                        </div>
+                    </nav>
+                </p>
+                <p><b>NavBar clásico</b></p>
+                <p>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Logo</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              <a class="nav-link" href="#">Features</a>
+                              <a class="nav-link" href="#">Pricing</a>
+                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </p>
+                <p><b>NavBar con desplegable</b></p>
+                <p>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Logo</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown link
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </p>
+                <p><b>NavBar con formulario y botón</b></p>
+                <p>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </p>
+                <p>En esta web hemos usado una combinación entre un Navbar clásico incluyendo despleglables y un formulario de busqueda.</p>
+                <h4 class="text-center mt-1" id="toast">Toast</h4>
+                <p>Un toast envía notificaciones a tus visitantes con un brindis, un mensaje de alerta ligero y fácilmente personalizable</p>
+                <p>Los brindis son notificaciones livianas diseñadas para imitar las notificaciones automáticas que se han popularizado en los sistemas operativos móviles y de escritorio. Están construidos con flexbox, por lo que son fáciles de alinear y colocar.</p>
+                <p><b>Visión de conjunto</b></p>
+                <p>Cosas que debe saber al usar el complemento de tostadas:</p>
+                <p>
+                    <ul>
+                        <li>Los brindis son opcionales por motivos de rendimiento, por lo que debe inicializarlos usted mismo.</li>
+                        <li>Las tostadas se ocultarán automáticamente si no las especifica autohide: false.</li>
+                    </ul>
+                </p>
+                <p id="subtitulo">Ejemplos</p>
+                <p><b>Toast Clásico</b></p>
+                <p><img src="./resources/toast.PNG" alt=""></p>
+                <p><b>Toast accionado con botón</b></p>
+                <p><img src="./resources/toast2.PNG" alt="" class="w-100 h-100"></p>
+                <p>Ademas este elemento puede posicionarse con otros toast de forma apilada, aplicarle transparencia y cambiar el color del mismo.</p>
+                <h4 class="text-center mt-1" id="list">List Groups</h4>
+                <p>Los grupos de listas son un componente flexible y potente para mostrar una serie de contenidos. Modifíquelos y amplíelos para que admitan prácticamente cualquier contenido.</p>
+                <p id="subtitulo">Ejemplos</p>
+                <p><b>Ejemplo básico</b></p>
+                <p>El grupo de lista más básico es una lista desordenada con elementos de lista y las clases adecuadas. Construya sobre él con las opciones que siguen, o con su propio CSS según sea necesario.</p>
+                <p>
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                </p>
+                <p><b>Active items</b></p>
+                <p>Agregando .active a un .list-group-item para indicar la selección activa actual.</p>
+                <p>
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">An active item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                </p>
+                <p><b>Con link y botón.</b></p>
+                <p>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                            The current link item
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                    </div>
+                </p>
+                <p><b>Numeradas</b></p>
+                <p>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                            Cras justo odio
+                          </div>
+                          <span class="badge bg-primary rounded-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                            Cras justo odio
+                          </div>
+                          <span class="badge bg-primary rounded-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <div class="ms-2 me-auto">
+                            <div class="fw-bold">Subheading</div>
+                            Cras justo odio
+                          </div>
+                          <span class="badge bg-primary rounded-pill">14</span>
+                        </li>
+                    </ol>
+                </p>
+                <p><b>Em horizontal</b></p>
+                <p>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </p>
+                <p><b>Con colores</b></p>
+                <p>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                    </div>
+                </p>
+                <p>En esta web hemos usado este elemento en el menu lateral de navegación</p>
+                <h4 class="text-center mt-1" id="badge">Badge</h4>
+                <p>Las insignias se escalan para coincidir con el tamaño del elemento principal inmediato mediante el uso de unidades em y tamaños de fuente relativos. A partir de la v5, las insignias ya no tienen estilos de enfoque o de desplazamiento para los enlaces.</p>
+                <p id="subtitulo">Ejemplo</p>
+                <p><b>Encabezados</b></p>
+                <p>
+                    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+                    <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+                    <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+                    <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+                    <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+                </p>
+                <p><b>En botones</b></p>
+                <p>
+                    <button type="button" class="btn btn-primary">
+                        Notifications <span class="badge bg-secondary">4</span>
+                    </button>
+                </p>
+                <p><b>En botón posicionado</b></p>
+                <p>
+                    <button type="button" class="btn btn-primary position-relative">
+                        Inbox
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                </p>
+                <p><b>Con colores de fondo</b></p>
+                <p>
+                    <span class="badge bg-primary">Primary</span>
+                    <span class="badge bg-secondary">Secondary</span>
+                    <span class="badge bg-success">Success</span>
+                    <span class="badge bg-danger">Danger</span>
+                    <span class="badge bg-warning text-dark">Warning</span>
+                    <span class="badge bg-info text-dark">Info</span>
+                    <span class="badge bg-light text-dark">Light</span>
+                    <span class="badge bg-dark">Dark</span>
+                </p>
+                <p><b>Insignias de píldora</b></p>
+                <p>Usamos la clase .rounded-pill de utilidad para hacer que las insignias sean más redondeadas con un border-radius.</p>
+                <p>
+                    <span class="badge rounded-pill bg-primary">Primary</span>
+                    <span class="badge rounded-pill bg-secondary">Secondary</span>
+                    <span class="badge rounded-pill bg-success">Success</span>
+                    <span class="badge rounded-pill bg-danger">Danger</span>
+                    <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+                    <span class="badge rounded-pill bg-info text-dark">Info</span>
+                    <span class="badge rounded-pill bg-light text-dark">Light</span>
+                    <span class="badge rounded-pill bg-dark">Dark</span>
+                </p>
+                <h4 class="text-center mt-1" id="modal">Modal</h4>
+                <p>Antes de comenzar con el componente modal de Bootstrap, asegúrese de leer lo siguiente, ya que nuestras opciones de menú han cambiado recientemente.</p>
+                <p>
+                    <ul>
+                        <li>Los modales se construyen con HTML, CSS y JavaScript. Se colocan sobre todo lo demás en el documento y eliminan el desplazamiento body para que el contenido modal se desplace en su lugar.</li>
+                        <li>Al hacer clic en el "telón de fondo" modal, se cerrará automáticamente el modal.</li>
+                        <li>Bootstrap solo admite una ventana modal a la vez. Los modales anidados no son compatibles porque creemos que son experiencias de usuario deficientes.</li>
+                        <li>Uso de modales position: fixed, que a veces puede ser un poco particular sobre su representación. Siempre que sea posible, coloque su HTML modal en una posición de nivel superior para evitar posibles interferencias de otros elementos. Es probable que tenga problemas al anidar .modal dentro de otro elemento fijo.</li>
+                        <li>Una vez más, debido a position: fixed, existen algunas advertencias con el uso de modales en dispositivos móviles. Consulte nuestros documentos de soporte del navegador para obtener más información.</li>
+                        <li>Debido a cómo HTML5 define su semántica, el autofocusatributo HTML no tiene efecto en los modales de Bootstrap. Para lograr el mismo efecto, use JavaScript personalizado:</li>
+                    </ul>
+                </p>
+                <p id="subtitulo">Ejemlos</p>
+                <p><b>Componentes modales</b></p>
+                <p>A continuación se muestra un ejemplo modal estático position (lo que significa que displayha sido anulado). Se incluyen el encabezado modal, el cuerpo modal (obligatorio para padding) y el pie de página modal (opcional). Le pedimos que incluya encabezados modales con acciones de descarte siempre que sea posible, o proporcione otra acción de descarte explícita.</p>
+                <p><img src="./resources/modal.PNG" alt=""></p>
+                <p><b>Demo en vivo</b></p>
+                <p>Alterne una demostración modal de trabajo haciendo clic en el botón a continuación. Se deslizará hacia abajo y se desvanecerá desde la parte superior de la página.</p>
+                <p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button>
+  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            ...
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </p>
+                <p><b>Contenido modal variable</b></p>
+                <p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <div class="col-lg-4 text-center" id="colDerecha">
+                <h2 class="text-danger">Navegación</h2> 
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active bg-danger" aria-current="true">Bootstrap</a>
+                    <a href="../index.html" class="list-group-item list-group-item-action">Inicio</a>
+                    <a href="index.html" class="list-group-item list-group-item-action">Teoria</a>
+                    <a href="#" class="list-group-item list-group-item-action">Contenido Interactivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="bg-danger text-center text-lg-start">
+        <section class="" style="background-color: rgba(0, 0, 0, 0.2);">
+            <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center pt-4">
+                <!--Grid column-->
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Suscribete a la Newsletter</strong>
+                        </p>
+                    </div>
+                <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example21" class="form-control" />
+                            <label class="form-label" for="form5Example21">Dirección Mail</label>
+                        </div>
+                    </div>
+                <!--Grid column-->
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-light mb-4">Subscribirse</button>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </form>
+        </section>
+        <!--Redes Sociales-->
+        <section class=" text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-facebook-f"></i>
+            </a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-google"></i>
+            </a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-github"></i>
+            </a>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Página creada por Daniel Gutierrez Legaz. TODOS LOS DERECHOS RESERVADOS.
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/>Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="text-dark" id="enlace">licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional.</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

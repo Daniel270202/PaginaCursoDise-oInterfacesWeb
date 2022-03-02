@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../resources_general/cientifico.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <title>Tema 3</title>
+</head>
+<body>
+    <!--Nav de la página-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">TEMA 3</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContenidoInteractivo.html">Contenido interactivo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Teoria</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#CC">Creative Commons</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#imagenes">Imágenes</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#audio">Audio</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#video">Video</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#animaciones">Animaciones Audio y Video</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagBootstrapItems.html">Bootstrap</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Titulo-->
+    <div class="container-fluid w-100 text-white" id="titulo">
+        <br>
+        <br>
+        <h2 class="display-1 text-center">Contenido Multimedia</h2>
+        <br>
+        <br>
+    </div>
+    <!--Contenido-->
+    <div class="container mt-4 mb-3">
+        <div class="row">
+            <div class="col-lg-4 me-4" id="colIzquierda">
+                <!--TEORIA TEMA3-->
+                <h4 class="text-center mt-1" id="CC">Creative Commons</h4> 
+                <p><b>LEGISLACIÓN</b></p>
+                <p>Es posible que al crear nuestras interfaces tengamos que incluir alguna obra ajena a nosotros como, por ejemplo, imagenes o videos.</p>
+                <p>Existen en la red multitud de recursos disponibles para ser utilizados como texto, imágenes, fotografías, sonido, video, etc. Cada uno de estos tipos de elementos pueden tener unos permisos o licencias de uso.</p>
+                <p><b>DERECHOS DE LA PROPIEDAD INTELECTUAL</b></p>
+                <p>Cualquier obra puede estar sujeta a ciertos derechos  comviene tener claro en qué consiste cada uno de ellos. Por ejemplo, cuando se habla de que una obra tiene los derechos reservados como:</p>
+                <p>
+                    <ul>
+                        <li>Reproducción y copia.</li>
+                        <li>Distribución: entregarla obra, darla en prestamos, etc.</li>
+                        <li>Comunicación pública: hablar, hacer clases, emitir una pelicula, etc.</li>
+                        <li>Transformación: permiso para hacer una obra derivada</li>
+                    </ul>
+                </p>
+                <p id="subtitulo">Ley de propiedad intelectual.</p>
+                <p>En España esta en vigor la LPI y es el marco en el que se regula el uso de todo tipo de obras.</p>
+                <p>En general esta ley otorga el derecho a la copia privada, siempre que sea para uso exclusivo privado.</p>
+                <p>En ningun caso se pierden los derechos al compartir una obra, lo que se hace es ceder derechos, pero como minimo se mantiene el derecho a cita.</p>
+                <p>En el caso de la red, no hay blanco y negro, Por ejemplo, Google intenta usar la legislación americana, pero si un contenido esta orientado a un país en concreto se le aplica esa ley. Es España, por ejemplo, no se puede usar Google News.</p>
+                <p><b>DERECHOS DE AUTOR</b></p>
+                <p>Si vamos a utilizar material ajeno, hay que pedir permiso o al menos comprobar lo que dice la ley.</p>
+                <p>¿Que sucede si el material que utilizamos es propio?</p>
+                <p>En esos casos no ya problema, salvo que se hayan cedido los derechos de propiedad intelectual.</p>
+                <p>En cuanto al contenidode dominio público, no tiene más restricciones que la de respetar al autor y mantener la integridad fr la obra.</p>
+                <p id="subtitulo">Licencias Copyleft.</p>
+                <p>A diferencia del copyrigth, que reserva todos los derechos, lalicencia copyleft nos permite crear licencias mas abiertas con algunos derechos reservados. A estas licencias se las conoce como licencias Creative Commons o simplemente CC.</p>
+                <p>Todas las licencias Creative Commons tienen el simbolo de reconocimiento del autor.</p>
+                <p>Ademas, se incluyen variantes:</p>
+                <div class="container-fluid justify-content-center">
+                    <img src="./resources/sec1/by-large_petit.png" alt="" title="Reconocimiento">
+                    <p><b>Reconocimiento:</b> en cualquier explotación de la obra autorizada por la licencia hará falta reconocer la autoria</p>
+                    <img src="./resources/sec1/nc-eu-large_petit.png" alt="" title="No Comercial">
+                    <p><b>No comercial:</b> la explotación de la obra queda limitada a usos no comerciales.</p>
+                    <img src="./resources/sec1/nd-large_petit.png" alt="" title="Sin obras deribadas">
+                    <p><b>Sin obras derivadas:</b> la autorización para explotar la obra no incluye la transformación para crear una obra derivada.</p>
+                    <img src="./resources/sec1/sa-large_petit.png" alt="" title="Compartir igual">
+                    <p><b>Compartir igual:</b> la explotación autorizada incluye la creación de obras derivadas siempre que mantengan la misma licencia al ser divulgadas.</p>
+                </div>
+                <p>Con estas condiciones se pueden generar las seis combinaciones que producen las licencias Creative Cammons:</p>
+                <div class="container-fluid justify-content-center">
+                    <img src="./resources/sec1/by_petit.png" alt="" title="Reconocimiento(by)">
+                    <p><b>Reconocimiento(by):</b> se permiten cuanquier explotación de la obra, incluyendo una finalidad comercial, asi como la creación de obras derivadas, la distrubución de las cuales tambn está permitida sin ninguna restricción.</p>
+                    <img src="./resources/sec1/by-nc-eu_petit.png" alt="" title="Reconocimiento-No Comercial">
+                    <p><b>Reconocimiento-No Comercial:</b> se permite la generación de obras derivadas, siempre que no se haga un uso comercial. Tampoco se puede utilizar la obra origianl con finalidades comerciales.</p>
+                    <img src="./resources/sec1/by-nc-sa-eu_petit.png" alt="" title="Reconocimiento-No Comercial-CompartirIgual">
+                    <p><b>Reconocimiento-No Comercial-CompartirIgual:</b> no se permite un uso comercial de la obra original ni de las posibles obras derivadas, la distribución de las cuales se debe hacer cn una licencia igual a la que regula la obra original.</p>
+                    <img src="./resources/sec1/by-nc-nd-eu_petit.png" alt="" title="Reconocimiento-No Comercial-SinObraDerivada">
+                    <p><b>Reconocimiento-No Comercial-SinObraDerivada:</b> No se permite un uso comercial de la obra original ni la generación de obras derivadas.</p>
+                    <img src="./resources/sec1/by-sa_petit.png" alt="" title="Reconocimiento-CompartirIgual">
+                    <p><b>Reconocimiento-CompartirIgual:</b> se permite el uso comercial de la obra y de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original.</p>
+                    <img src="./resources/sec1/by-nd_petit.png" alt="" title="Reconocimiento-SinObraDerivada">
+                    <p><b>Reconocimiento-SinObraDerivada:</b> se permite el uso comercial de la obra, pero no la generación de obras derivadas.</p>
+                </div>
+                <p>En la propia web de CC hay una página que permite mediante un asistente crear la licencia que más se ajuste a nuestras necesidades.</p>
+                <p id="subtitulo">FORMATOS DE LICENCIAS.</p>
+                <p>La forma de indicar una licencia puede ser más o menos abreviada, según el medio o en función a nuestras necesidades de diseño:</p>
+                <p>
+                    <ul>
+                        <li><b>Larga con texto:</b> Autor (C) Titular 2006</li>
+                        <li><b>Texto abreviado:</b> CC BV-XX Autor, 2006</li>
+                        <li><b>Enlace:</b> Enlace a la licencia.</li>
+                        <li><b>Icono:</b> Icono que a la vez puede tener enlace.</li>
+                        <li><b>Metadatos</b></li>
+                    </ul>
+                </p>
+                <h4 class="text-center mt-1" id="imagenes">Imagenes</h4>
+                <p><b>TIPOS DE IMAGENES EN LA WEB</b></p>
+                <p>Todas las imagenes que se listan aquí, así como muchas otras pueden convertirse facilmente con un software de edición de imágenes como Gimp o Photoshop, o con herramientas de linea de comandos como ImageMagick.</p>
+                <p>Lo esencial es saber en qué casos debemos utilizar una u otra, y si es necesario convertir y optimizarla para la web.</p>
+                <p>No vale cualquier formato, en la web se debe buscar el equilibrio entre resolución y tamaño de archivo. A continuación vamos a ver los tres formatos</p>
+                <p id="subtitulo">FORMATO GIF.</p>
+                <p>El formato GIF es el tipo de archivo favorito en internet debido a su capacidad para animar imágenes. Los archivos GIF utilizan mapas de bits y admiten hasta 8 bits/píxel, permitiendo 256 colores en la gama RGB de 24 bits.</p>
+                <p><b>¿Cuándo usar los GIF?</b></p>
+                <p>Estos tipos de imágenes, las podemos usar en imágenes que necesiten pocos colores o que tengan colores planos cómo por ejemplo logos, iconos, gráficos de datos…</p>
+                <p><img src="./resources/sec2/nyan-cat-gif.gif" alt="" title="gif" class="w-25 h-auto"></p>
+                <p id="subtitulo">FORMATO JPG.</p>
+                <p>Se trata del término acuñado por Joint Photographic Experts Group, grupo de expertos que creó el . jpg,. Un formato de compresión de imágenes, tanto en color como en escala de grises, con alta calidad. ... Normalmente alcanza una compresión de uno a diez con pocas pérdidas perceptibles en la calidad de la imagen.</p>
+                <p><b>¿Cuándo usar JPG?</b></p>
+                <p>Este tipo de imagen es recomendable usarla para fotos de alta calidad, cómo fotos de un fotógrafo.</p>
+                <p><img src="./resources/sec2/Cat03.jpg" alt="" title="jpg" class="w-25 h-auto"></p>
+                <p id="subtitulo">FORMATO PNG.</p>
+                <p>PNG significa Portable Network Graphics, aunque algunos también le llaman PNG-not_GIF. A diferencia del GIF, maneja las transparencias con más elegancia y sin perder color porque soporta colores de 8-bits, y también de 24-bits, como JPG</p>
+                <p><b>Transparencia</b></p>
+                <p>En este tipo de archivos la transparencia es una de sus ventajas. Nos permite definir la cantidad de transparencia que va a tener esa imagen.</p>
+                <p><img src="./resources/sec2/—Pngtree—beautiful hologram -color  _3643167.png" alt="" title="PNG" class="w-25 h-auto"></p>
+                <p><b>MAPAS DE BITS Y IMAGEN VECTORIAL</b></p>
+                <p id="subtitulo">BITMAPS</p>
+                <p>El concepto de bitmap es también identificado como mapa de bits, imagen rasterizada o imagen matricial. Consiste en el conjunto de puntos, identificados como píxeles, que forman una imagen. Un píxel contiene información sobre el color que debe representar.</p>
+                <p id="subtitulo">IMAGEN VECTORIAL</p>
+                <p>El dibujo vectorial es un término que describe cualquier dibujo realizado con un software de ilustración vectorial como Adobe Illustrator. El dibujo vectorial se crea a partir de gráficos vectoriales, que son imágenes creadas con fórmulas matemáticas.</p>
+                <p><img src="./resources/sec2/formato-vector-1200x675.jpg" alt="" class="w-25 h-auto"></p>
+                <p><b>SOFTWARE PARA CREAR Y PROCESAR IMÁGENES Y VÍDEOS</b></p>
+                <p>Actualmente existe muchísimo software ideal para crear imágenes y vídeos:</p>
+                <p>
+                    <ul>
+                        <li><b>Photoshop:</b> Es de pago, trabaja con ficheros con extensión .psd y nos permite exportar en cualquiera de los tipos de imágenes.</li>
+                        <li><b>Gimp:</b> Es gratuito, muy conocido por obtener grandes similitudes con Photoshop. También nos permite exportar en diferentes tipos de formatos de imagen.</li>
+                        <li><b>Filmora:</b> Este programa es ideal para editar vídeos, nos permite con una prueba gratuita usar filmora. Permite exportar en muchos formatos de vídeo diferentes, entre ellos .mp4, .mov…</li>
+                        <li><b>Avidemux:</b> Avidemux es una aplicación de software libre y multiplataforma, lo que quiere decir que su código puede ser revisado por cualquiera para mejorarlo o buscar errores, que será siempre gratuito y que es compatible con varios sistemas operativos. En este caso, tienes versiones para GNU/Linux, Windows, macOS y PC-BSD.</li>
+                    </ul>
+                </p>
+                <h4 class="text-center mt-1" id="audio">Audio</h4>
+                <p>Es posible añadir archivos de audio a nuestras páginas web para colocar música, sonidos o simplemente usar música como ambientación.</p>
+                <p>La etiqueta "audio" tiene varios atributos a nuestra disposición:</p>
+                <p>
+                    <ul>
+                        <li><b>src:</b> Audio a reproducir. Obligatoria si actua como etiqueta contenedora.</li>
+                        <li><b>preload:</b> Indica como realizar la precarga del audio.</li>
+                        <li><b>mediagroup:</b> Establece un nombre para un grupo de contenidos multimedia.</li>
+                        <li><b>autoplay:</b> Comienza a reproducir el audio automáticamente.</li>
+                        <li><b>loop:</b> Vuelve a iniciar el audio cuando finaliza su reproducción (bucle).</li>
+                        <li><b>muted:</b> Establece el audio sin sonido (silenciado).</li>
+                        <li><b>controls:</b> Muestra los controles de reproducción. Por defecto no se muestran.</li>
+                    </ul>
+                </p>
+                <p id="subtitulo">Formatos de audio</p>
+                <p>
+                    <ul>
+                        <li><b>MP3:</b> tiene buena calidad y buen soporte.</li>
+                        <li><b>ACC:</b> mejora el MP3, se usa como audio para el MP4 y tiene un buen soporte.</li>
+                        <li><b>OGG:</b> tiene buena calidad, es una alternativa libre a MP3 y tiene un soporte medio.</li>
+                        <li><b>Opus:</b> tiene buena calidad, es una alternativa libre a MP3 y tiene un soporte medio.</li>
+                        <li><b>FLAC:</b> tiene una compresión sin perdidas pero ocupa un gran tamaño y tiene un buen soporte.</li>
+                        <li><b>WAV:</b> es el formato de audio de microsoft</li>
+                    </ul>
+                </p>
+                <p>En caso de que nuestra archivo en la etiqueta audio no sea compatible, podemos utilizar la etiqueta source para añadir otras alternativas de formato para que haya más compatibilidad.</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p>
+                    <audio controls>
+                        <source src="./resources/ejemplo bueno tran.mp3" type="audio/mpeg">
+                    </audio>
+                </p>
+                <h4 class="text-center mt-1" id="video">Video</h4>
+                <p>En HTML5 encontramos la posibilidad de mostrar video directamente desde nuestro navegador.</p>
+                <p> Para poder insertar videos en nuestras páginas HTML tenemos que utilizar la etiqueta <b>video</b>, que junto a la etiqueta <b>source</b> podremos utilizar estas capacidades multimedia de HTML5.</p>
+                <p>La etiqueta <b>video</b> tiene varios atributos a nuestra disposición:</p>
+                <p>
+                    <ul>
+                        <li><b>SRC:</b> Video a reproducir. Obligatoria si actua como etiqueta contenedora.</li>
+                        <li><b>POSTER:</b> Muestra una imagen a modo de presentación.</li>
+                        <li><b>PRELOAD:</b> Indica como realizar la precarga del video.</li>
+                        <li><b>MEDIAGROUP:</b> Establece un nombre para un grupo de contenidos multimedia.</li>
+                        <li><b>AUTOPLAY:</b> Comienza a reproducir el video automáticamente.</li>
+                        <li><b>LOOP:</b> Vuelve a iniciar el video cuando finaliza su reproducción (bucle).</li>
+                        <li><b>MUTED:</b> Establece el video sin sonido (silenciado).</li>
+                        <li><b>CONTROLS:</b> Muestra los controles de reproducción. Por defecto no se muestran.</li>
+                        <li><b>WIDTH:</b> Indica el tamaño de ancho del video.</li>
+                        <li><b>HEIGHT:</b> Indica el tamaño de alto del video.</li>
+                    </ul>
+                </p>
+                <p id="subtitulo">FORMATOS DE VIDEO</p>
+                <p>Con los videos encontramos los siguientes formatos:</p>
+                <p>
+                    <ul>
+                        <li><b>MP4:</b> Tiene una alta calidad, utiliza Codec x264 y tiene un buen soporte en navegadores.</li>
+                        <li><b>WebM:</b> Es la alternativa libre a MP4 de Google y tiene un soporte medio en navegadores.</li>
+                        <li><b>AV1:</b> La competencia de este formato es HEVC, el problema es que no tiene un buen soporte web.</li>
+                        <li><b>HEVC:</b> Es la futura evolución del MP4 y al ser un formato moderno no tiene un gran soporte web.</li>
+                        <li><b>OGV</b> Este formato es tora alternativa al MP4 pero debe usarse con cuidado ya que no funciona en todos los navegadores.</li>
+                        <li><b>MKV:</b> Este formato tiene una buena compresión y es muy potente de calidad, por eso no es recomendable su uso ya que sobre carga el CPU</li>
+                        <li><b>AVI:</b> Este formato tiene menor compresión que MP4 y no tiene soporte actualmente ya que se encuentra anticuado</li>
+                    </ul>
+                </p>
+                <p>Cuando pongamos en práctica esta etiqueta puede darse el caso de que no se ejecute el video, es por ello que es recomendable tener el mismo archivo en varios formatos y colocarlos con la etiqueta <b>source</b> para tener una mayor compatibilidad en nuestra web.</p>
+                <p>Como dato extra en el atributo scr si al archivo de video le anadimos este fragmento "#t=NÚMERO" podremos especificar en que segundo queremos que empieze y si especificamos "#t=NÚMERO, NÚMERO" le diremos en el segundo que queremos que empieze y cual queremos que acabe.</p>
+                <p id="subtitulo">EJEMPLO</p>
+                <p><video controls width="45%" height="auto" src="./resources/Geometry Dash 2021-10-03 10-41-15.mp4"></video></p>
+                <h4 class="text-center mt-1" id="animaciones">ANIMACIONES CON AUDIO Y VÍDEO</h4>
+                <p id="subtitulo">EJEMPLO ANIMACIONES CON IMAGEN</p>
+                <p>Podemos crear animaciones con imagenes y videos en nuestra web y vamos a poner dos ejemplos a continuación:</p>
+                <p>Ejemplo Switch DIA y NOCHE(imagen): <a href="https://codepen.io/Catagen/pen/PqYdXR" target="_blanck">Pincha aquí</a></p>
+                <p>Ejemplo Animación de STAR WARS(video): <a href="https://codepen.io/donovanh/pen/pJzwEw" target="_blanck">Pincha aquí</a></p>
+            </div>
+            <div class="col-lg-4 text-center" id="colDerecha">
+                <h2 class="text-danger">Navegación</h2> 
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active bg-danger" aria-current="true">Teoria</a>
+                    <a href="../index.html" class="list-group-item list-group-item-action">Inicio</a>
+                    <a href="pagBootstrapItems.html" class="list-group-item list-group-item-action">Bootstrap</a>
+                    <a href="#" class="list-group-item list-group-item-action">Contenido Interactivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="bg-danger text-center text-lg-start">
+        <section class="" style="background-color: rgba(0, 0, 0, 0.2);">
+            <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center pt-4">
+                <!--Grid column-->
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Suscribete a la Newsletter</strong>
+                        </p>
+                    </div>
+                <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" id="form5Example21" class="form-control" />
+                            <label class="form-label" for="form5Example21">Dirección Mail</label>
+                        </div>
+                    </div>
+                <!--Grid column-->
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-light mb-4">Subscribirse</button>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </form>
+        </section>
+        <!--Redes Sociales-->
+        <section class=" text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-facebook-f"></i>
+            </a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-google"></i>
+            </a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fa fa-github"></i>
+            </a>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Página creada por Daniel Gutierrez Legaz. TODOS LOS DERECHOS RESERVADOS.
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/>Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" class="text-dark" id="enlace">licencia de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional.</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

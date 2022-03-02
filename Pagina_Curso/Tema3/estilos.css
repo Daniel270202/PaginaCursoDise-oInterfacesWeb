@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(255, 162, 162);
+}
+#titulo{
+    background-color: rgb(138, 138, 138);
+    height: 25%;
+}
+h4{
+    color: white;
+    background: rgb(46, 49, 49);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 15px;
+    border-color: rgb(223, 56, 56);
+    border-style: solid;
+}
+#colIzquierda{
+    width: 70%;
+    border-radius: 15px;
+    border-color: rgb(223, 56, 56);
+    border-style: solid;
+}
+#colDerecha{
+    display: inline-block;
+    width: 25%;
+    position: sticky;
+}
+#subtitulo{
+    color: rgb(180, 6, 6);
+}
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: .5em .5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
+}
+
+details[open] {
+  padding: .5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: .5em;
+}
